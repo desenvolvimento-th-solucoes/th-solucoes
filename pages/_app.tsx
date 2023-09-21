@@ -1,12 +1,13 @@
 "use client";
 
-import { AuthenticationContext, AuthenticationProvider } from '@/app/context/AuthenticationContext';
+import { AuthenticationProvider } from '@/app/context/AuthenticationContext';
 import '../src/app/globals.css';
 import type { Metadata } from 'next'
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AppProps } from 'next/app';
 import LoadingScreen from '@/app/components/LoadingScreen';
 import { useRouter } from 'next/router';
+import 'tailwindcss/tailwind.css';
 
 export const metadata: Metadata = {
     title: 'Create Next App',

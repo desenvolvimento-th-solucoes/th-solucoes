@@ -19,7 +19,7 @@ export const TypingAnimation = () => {
             }
         }, 100);
         return () => clearInterval(typingInterval);
-    }, [currentSentenceIndex, sentences]);
+    }, [currentSentenceIndex]);
 
     return (
         <div className="inline-block overflow-hidden border-r-2 border-r-white leading-normal">
