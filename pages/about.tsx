@@ -64,7 +64,7 @@ const About = () => {
                             />
                             <NormalCard
                                 title="Valores"
-                                body="Ética / Responsabilidade / Inovação / Espírito de Equipe / Dedicação / Comprometimento."
+                                body="Transparência / Honestidade / Ética / Responsabilidade / Inovação / Espírito de Equipe / Dedicação / Comprometimento."
                                 icon={<IoDiamondOutline className="text-6xl" />}
                             />
                         </div>

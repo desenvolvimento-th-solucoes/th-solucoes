@@ -37,7 +37,7 @@ const Services = () => {
                             onClick={() => features.handleScrollTo("#solutions")}
                             icon={<BsShieldFillCheck className="text-6xl" />}
                             title={"Nosso Firewall"}
-                            body={"Proteção online abrangente: antivírus de navegação contra ameaças, defesa anti-hackers, otimização de internet para desempenho superior e estratégias de alta disponibilidade para operação contínua."}
+                            body={"Proteção online abrangente: antivírus de navegação contra ameaças, defesa anti-hackers, otimização de sua rede para desempenho superior e estratégias de alta disponibilidade para operação contínua."}
                         />
                         <NormalCard
                             button={true}
