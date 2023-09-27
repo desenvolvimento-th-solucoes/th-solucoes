@@ -351,7 +351,6 @@ const RestrictRegister = () => {
         });
 
         let isValid = steps[currentStep].every(element => {
-            console.log(element.filledOutCorrectly);
             return element.filledOutCorrectly ? true : false;
         });
 
