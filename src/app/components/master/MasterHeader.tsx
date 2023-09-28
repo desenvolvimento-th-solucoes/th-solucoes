@@ -40,7 +40,7 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
     return (
         <header className={`${!enable && "-mt-header"} ${enable && "mt-0"} duration-slow z-40 transition-all w-screen text-white flex justify-center fixed shadow-gray-800 shadow-lg bg-default-black`}>
             <nav className="container mx-auto flex items-center justify-between h-20 w-full relative px-4">
-                <Link href="/" className="h-full flex items-center z-10"><Image width={200} height={60} src="/assets/images/th-solucoes-logo1.png" alt="" /></Link>
+                <Link href="/" className="h-full flex items-center z-10"><img width={200} height={60} src="../../assets/images/th-solucoes-logo1.png" alt="" /></Link>
                 <ul className="hidden xl:flex items-center justify-center h-full">
                     <li className="group text-md font-medium transition-all hover:bg-default-blue h-full"><button className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" onClick={() => navigate.push("/")}>Início</button></li>
                     <li className="group text-md font-medium transition-all hover:bg-default-blue h-full"><button className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" onClick={() => navigate.push("/services")}>Serviços</button></li>

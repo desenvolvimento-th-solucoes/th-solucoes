@@ -33,23 +33,17 @@ const Services = () => {
                 <section id="offers" className="px-4">
                     <div className="container mx-auto h-max py-12 grid gap-8 relative bottom-20 md:grid-cols-2 lg:grid-cols-3">
                         <NormalCard
-                            button={true}
-                            onClick={() => features.handleScrollTo("#solutions")}
                             icon={<BsShieldFillCheck className="text-6xl" />}
                             title={"Nosso Firewall"}
                             body={"Proteção online abrangente: antivírus de navegação contra ameaças, defesa anti-hackers, otimização de sua rede para desempenho superior e estratégias de alta disponibilidade para operação contínua."}
                         />
                         <NormalCard
-                            button={true}
-                            onClick={() => features.handleScrollTo("#solutions")}
                             icon={<BsFillBuildingFill className="text-6xl" />}
                             title={"Infraestrutura"}
                             body={"Amplie eficiência com redes estruturadas e WiFi profissional. Suporte ágil pelo helpdesk com monitoramento via chamado e SLA. Fortaleça conexões corporativas com WiFi dedicado. Garanta segurança através de projetos de câmeras de vigilância."}
                         />
                         <NormalCard
                             className={"md:col-span-full lg:col-span-1"}
-                            button={true}
-                            onClick={() => features.handleScrollTo("#solutions")}
                             icon={<BsFillCloudArrowUpFill className="text-6xl" />}
                             title={"Solução em Nuvem"}
                             body={"Garantimos a solidez da sua infraestrutura de TI. Isso abrange servidores e bancos de dados eficientes, estratégias de backup confiáveis e migração perfeita para a nuvem. Além disso, implementamos medidas de segurança abrangentes, incluindo soluções antivírus, para proteger seus sistemas e dados."}
@@ -145,7 +139,7 @@ const Services = () => {
                         </div>
                         <div className="md:w-full relative lg:w-1/2">
                             <div className="w-full h-full absolute hover:bg-default-black/50 transition-all cursor-pointer z-20"></div>
-                            <Image src="/assets/images/services-image.jpg" layout="responsive" alt="Futuristic Computer" className="h-full object-cover" />
+                            <img src="/assets/images/services-image.jpg" alt="Futuristic Computer" className="h-full object-cover" />
                         </div>
                     </div>
                 </section>
