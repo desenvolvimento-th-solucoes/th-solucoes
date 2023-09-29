@@ -83,7 +83,7 @@ const Food = () => {
                                     </li>
                                     <li className="flex items-center text-xs md:text-sm lg:text-md">
                                         <div><BiCheckCircle className="text-green-500 mr-2" /></div>
-                                        Integrado ao Ifoooooood
+                                        Integrado ao Ifood
                                     </li>
                                 </ul>
                             </div>
