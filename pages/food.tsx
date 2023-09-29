@@ -3,12 +3,11 @@
 import MainLayout from "@/app/App";
 import { Button } from "@/app/components/button";
 import { useRouter } from "next/router";
-import { AiOutlineHeart, AiOutlineMessage } from "react-icons/ai";
+import { AiOutlineMessage } from "react-icons/ai";
 import { BiCheckCircle, BiPlusCircle } from "react-icons/bi";
 import { FaBreadSlice, FaPizzaSlice, FaSpoon, FaTrailer, FaUserDoctor, FaWhatsapp } from "react-icons/fa6";
 import { ButtonDefault } from "@/app/components/button/ButtonDefault";
 import { FaBeer } from "react-icons/fa";
-import { PiNeedleLight } from "react-icons/pi";
 import { CiShop } from "react-icons/ci";
 import { MdOutlineSportsMotorsports } from "react-icons/md";
 import { GiCupcake } from "react-icons/gi";
