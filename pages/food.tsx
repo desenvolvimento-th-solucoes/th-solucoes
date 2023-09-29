@@ -82,6 +82,10 @@ const Food = () => {
                                         <div><BiCheckCircle className="text-green-500 mr-2" /></div>
                                         Gestão Inteligente
                                     </li>
+                                    <li className="flex items-center text-xs md:text-sm lg:text-md">
+                                        <div><BiCheckCircle className="text-green-500 mr-2" /></div>
+                                        Integrado ao Ifood
+                                    </li>
                                 </ul>
                             </div>
                         </div>
