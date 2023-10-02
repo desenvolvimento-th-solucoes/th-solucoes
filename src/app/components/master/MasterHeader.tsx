@@ -13,7 +13,6 @@ import { AiOutlineInfo } from "react-icons/ai";
 import { BsGlobe, BsScissors } from "react-icons/bs";
 import { FaCarrot } from "react-icons/fa6";
 import Link from "next/link";
-import Image from "next/image";
 
 export const MasterHeader = ({ enable }: { enable: boolean }) => {
     const authenticationContext = useContext(AuthenticationContext);
@@ -49,7 +48,7 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                     <li className="group text-md font-medium transition-all hover:bg-default-blue h-full"><button className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" onClick={() => navigate.push("/restrict/login")}>Área Restrita</button></li>
                     <li className="group text-md font-medium transition-all hover:bg-default-blue h-full"><Link className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" href="https://webmail.thsolucoes.com/">Webmail</Link></li>
                     <li className="group text-md font-medium transition-all hover:bg-default-blue h-full"><Link className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" href="https://lojath.com.br/">Loja</Link></li>
-                    <li className="group text-md font-medium transition-all hover:bg-default-blue h-full px-4">
+                    <li className="group text-md font-medium transition-all hover:bg-default-blue h-full">
                         <ComboBox label={"TH Sistemas"} >
                             <ComboOption labelColor="text-white" label={"TH Web"} icon={<BsGlobe className="text-xl" />} onClick={() => navigate.push("/web")} />
                             <ComboOption labelColor="text-white" label={"TH Agro"} icon={<FaCarrot className="text-xl" />} onClick={() => navigate.push("/agribusiness")} />
