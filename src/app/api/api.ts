@@ -5,7 +5,7 @@ import { Message } from "../types/Message";
 import { Save } from "../types/Save";
 
 const instance = axios.create({
-    baseURL: "http://odmzus.hospedagemelastica.com.br/public/api",
+    baseURL: "http://nemwab.hospedagemelastica.com.br/public/api",
     withCredentials: true
 });
 
