@@ -39,7 +39,7 @@ export const ComboBox = ({ children, label, icon }: Props) => {
 
     return (
         <button
-            className="flex flex-col items-center justify-center relative cursor-pointer h-full"
+            className="flex flex-col px-4 items-center justify-center relative cursor-pointer h-full"
             onClick={handleClick}
             onBlur={handleBlur}
             tabIndex={0}
