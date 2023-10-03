@@ -12,7 +12,6 @@ import { FaLocationDot, FaWhatsapp } from "react-icons/fa6";
 import { BsTelephone } from "react-icons/bs";
 import { PiPaperPlaneRight } from "react-icons/pi";
 import { validator } from "@/app/features/validator";
-import Map from "@/app/components/Map";
 import '../src/app/globals.css';
 import MainLayout from "@/app/App";
 import { api } from "@/app/api/api";
@@ -270,16 +269,16 @@ const Contact = () => {
                 <section className="w-screen h-max py-12">
                     <div className="container mx-auto flex flex-col">
                         <div className="w-full">
-                            <h2 className="text-2xl font-bold mb-4 text-center lg:text-4xl">Nossa Localização.</h2>
-                            <p className="font-extralight text-md mb-6 text-center lg:text-xl lg:text-left">Nossos clientes são importantes para nós. Ficaríamos contentes em receber a sua visita durante nosso horário comercial.</p>
+                            <h2 className="text-2xl font-bold mb-4 text-center lg:text-4xl">Nossa Localização</h2>
+                            <p className="font-extralight text-md mb-6 text-center lg:text-xl">Nossos clientes são importantes para nós. Ficaríamos contentes em receber a sua visita durante nosso horário comercial.</p>
                             <div className="w-full flex justify-center">
                                 <Button.Root hoverTextColor="group-hover:text-white" defaultTextColor={"text-black"} label="Como chegar" onClick={() => redirect("https://www.google.com/maps?daddr=Rua+Dr.+Jose+Alves,+313-B+-+Centro++Mogi+Mirim+-+S%C3%A3o+Paulo,+13800-050,+Brazil")}>
                                     <Button.Icon backgroundColor="bg-default-blue" color="text-white" icon={<PiPaperPlaneRight className="absolute left-0 ml-3" />} />
                                 </Button.Root>
                             </div>
                         </div>
-                        <div className="w-full">
-                            <Map />
+                        <div className="w-full mt-8">
+                            <img src="/assets/images/map.png" className="object-cover w-full h-full" alt="" />
                         </div>
                     </div>
                 </section>
