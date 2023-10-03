@@ -74,7 +74,7 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                 {authenticationContext?.localStorageData.loggedUser && authenticationContext.localStorageData.isLogged ? (
                     <div className="flex items-center gap-4">
                         <div className={`hidden ${!hidden && "xl:flex"} gap-4 h-full lg:items-center lg:justify-center`}>
-                            <p>{features.toCapitalize(authenticationContext.localStorageData.loggedUser.name)}</p>
+                            <p>Olá, {features.toCapitalize(authenticationContext.localStorageData.loggedUser.name)}</p>
                             <ComboBox icon={<HiOutlineUserCircle className="text-white text-2xl" />}>
                                 <ComboOption labelColor="text-white" label={"Conta"} icon={<MdOutlineManageAccounts className="text-xl" />} onClick={() => navigate.push("/account")} />
                                 <ComboOption labelColor="text-red-700 font-medium" label={"Sair"} icon={<BiPowerOff className="text-red-700 text-xl" />} onClick={handleAskLogout} />
@@ -88,7 +88,7 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                 ) : (
                     <>
                         {authenticationContext?.localStorageData.loggedUser && authenticationContext.localStorageData.isLogged ? (
-                            <p>{features.toCapitalize(authenticationContext.localStorageData.loggedUser.name)}</p>
+                            <p>Olá, {features.toCapitalize(authenticationContext.localStorageData.loggedUser.name)}</p>
                         ) : null}
                         <button onClick={openMenu} className="xl:hidden">
                             <BiMenuAltRight className="text-3xl" />
