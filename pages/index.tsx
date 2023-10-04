@@ -52,7 +52,6 @@ const Index = () => {
                         </div>
                     </div>
                 </section>
-
                 <section className="h-max">
                     <div className="container mx-auto flex items-center justify-center gap-8 py-12 px-4">
                         <div className="w-full">
@@ -66,7 +65,9 @@ const Index = () => {
                         </div>
                     </div>
                 </section>
-
+                <div className="bg-default-blue h-5 w-screen">
+                    
+                </div>
                 <section className="h-max w-screen bg-default-black text-white py-12 px-4">
                     <div className="container mx-auto flex flex-col items-center w-full">
                         <h2 className="text-3xl font-bold mb-4">Newsletter</h2>
@@ -88,6 +89,7 @@ const Index = () => {
                         </form>
                     </div>
                 </section>
+                <script src='https://privacidade.api.milvus.com.br/api/configuracao/script/a7c54480/eb8f23f55348c0eeffb2dfbf26274f0c32523827b301120accf41ee2bfa7117766d8a9bdb689ffb9583f7b4634e04bc9f5e44cc46e95e8b25374c94d61f6fe77593ffb1b0ba3fd8ba03cb2bdd7a593439aa2f667cdd2e77c2f4f73d43c84e4b2b17254178c'></script>
             </main>
         </MainLayout>
     )

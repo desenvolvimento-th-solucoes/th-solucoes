@@ -57,6 +57,7 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                             <ComboOption labelColor="text-white" label={"TH Salões & Barbearias"} icon={<BsScissors className="text-xl" />} onClick={() => navigate.push("/hairdressers")} />
                         </ComboBox>
                     </li>   
+                    <li className="group text-md font-medium transition-all hover:bg-default-blue h-full"><Link className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" href="https://thsolucoes.suport.systems/">Suporte</Link></li>
                 </ul>
                 <Modal
                     contextBorderColor="border-default-blue"

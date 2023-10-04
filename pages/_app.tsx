@@ -8,6 +8,7 @@ import { AppProps } from 'next/app';
 import LoadingScreen from '@/app/components/LoadingScreen';
 import { useRouter } from 'next/router';
 import 'tailwindcss/tailwind.css';
+import { AcceptCookies } from '@/app/components/AcceptCookies';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -16,6 +17,15 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ Component, pageProps }: AppProps) => {
     const [loading, setLoading] = useState(false);
+    const [hiddenAllowCookies, setHiddenAllowCookies] = useState(true);
+
+    const handleDeny = () => setHiddenAllowCookies(true);
+
+    const handleAllow = () => {
+        setHiddenAllowCookies(true);
+        localStorage.setItem("allowCookies", JSON.stringify({ allowCookies: true }));
+    }
+
     const navigate = useRouter();
 
     const handleStart = () => {
@@ -48,10 +58,17 @@ const RootLayout = ({ Component, pageProps }: AppProps) => {
         }
     }, [loading]);
 
+    useEffect(() => {
+        if(!localStorage.getItem("allowCookies")) {
+            setTimeout(() => setHiddenAllowCookies(false), 3000);
+        }
+    }, []);
+    
     return (
         <AuthenticationProvider>
             <Component {...pageProps} />
             {loading && <LoadingScreen />}
+            <AcceptCookies handleAllow={handleAllow} handleDeny={handleDeny} hidden={hiddenAllowCookies}/>
         </AuthenticationProvider>
     );
 }

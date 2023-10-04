@@ -5,7 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 export const MasterFooter = () => {
     return (
         <footer className="w-screen bg-white pt-12 h-max relative">
-            <div className="container mx-auto text-black flex gap-8 justify-between flex-col px-4 md:flex-row">
+            <div className="container mx-auto text-black flex gap-12 flex-col px-4 md:flex-row">
                 <div>
                     <h1 className="text-2xl font-bold text-center md:text-left">Fale Conosco</h1>
                     <div className="flex items-center flex-col mt-4 md:flex-row">
@@ -41,9 +41,6 @@ export const MasterFooter = () => {
                         <li className="group text-lg text-gray-500 transition-all text-center lg:text-left"><Link className="group-hover:text-default-blue" href="/login">Iniciar Sessão</Link></li>
                         <li className="group text-lg text-gray-500 transition-all text-center lg:text-left"><Link className="group-hover:text-default-blue" href="/register">Registrar-se</Link></li>
                     </ul>
-                </div>
-                <div>
-
                 </div>
             </div>
             <div className="w-full bg-default-blue text-white mt-12 flex justify-center items-center px-4 text-center py-2">
