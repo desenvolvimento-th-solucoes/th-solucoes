@@ -5,7 +5,7 @@ const LoadingScreen = () => {
     const [problem, setProblem] = useState(false);
     
     useEffect(() => {
-        setTimeout(() => setProblem(true), 5000);
+        setTimeout(() => setProblem(true), 8000);
     }, []);
 
     return (
