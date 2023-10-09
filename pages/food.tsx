@@ -19,7 +19,7 @@ const Food = () => {
     const router = useRouter();
     return (
         <MainLayout typeOfButtonInteraction={1}>
-            <main className="bg-default-blue w-full h-full">
+            <main className="bg-black w-full h-full">
                 <section className="container mx-auto text-white px-4">
                     <div className="flex items-center pt-20">
                         <div className="rounded-lg text-white">
@@ -28,7 +28,7 @@ const Food = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-8 min-h-screen py-12 lg:grid lg:grid-cols-2 xl:grid-cols-3">
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col shadow-lg shadow-slate-700">
+                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Emissão de Documentos Fiscais</h1>
                             <p className="text-xs sm:text-sm sm:text-md font-extralight mb-6 text-center lg:text-lg">Emita documentos fiscais de forma descomplicada.</p>
                             <div className="gap-4 w-full flex items-center justify-center">
@@ -36,7 +36,7 @@ const Food = () => {
                                 <div className="w-max px-4 py-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-lg">NFCe</div>
                             </div>
                         </div>
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col shadow-lg shadow-slate-700">
+                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Fiscal e Contábil</h1>
                             <p className="text-xs sm:text-sm sm:text-md font-extralight mb-6 text-center lg:text-lg">Desenvolvido para MEI, ME, Simples, Lucro Real e Lucro Presumido.</p>
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full">
@@ -120,35 +120,35 @@ const Food = () => {
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Tipos de negócio do pequeno e médio varejo.</p>
                             <div className="w-full">
                                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <FaBeer className="text-2xl lg:text-4xl" />
                                         <h1>Bares</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <FaSpoon className="text-2xl lg:text-4xl" />
                                         <h1>Restaurantes</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <FaPizzaSlice className="text-2xl lg:text-4xl" />
                                         <h1>Pizzarias</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <MdOutlineSportsMotorsports className="text-2xl lg:text-4xl" />
                                         <h1>Delivery</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <FaBreadSlice className="text-2xl lg:text-4xl" />
                                         <h1>Padarias</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <GiCupcake className="text-2xl lg:text-4xl" />
                                         <h1>Docerias</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <CiShop className="text-2xl lg:text-4xl" />
                                         <h1>Lanchonetes</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <FaTrailer className="text-2xl lg:text-4xl" />
                                         <h1>Trailers & Foodtrucks</h1>
                                     </div>

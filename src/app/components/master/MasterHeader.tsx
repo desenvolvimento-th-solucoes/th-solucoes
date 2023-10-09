@@ -52,10 +52,10 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                         <ComboBox label={"TH Sistemas"} >
                             <ComboOption labelColor="text-white" label={"TH Web"} icon={<BsGlobe className="text-xl" />} onClick={() => navigate.push("/web")} />
                             <ComboOption labelColor="text-white" label={"TH Agro"} icon={<FaCarrot className="text-xl" />} onClick={() => navigate.push("/agribusiness")} />
-                            <ComboOption labelColor="text-white" label={"TH Clínicas"} icon={<MdMedicalServices className="text-xl" />} onClick={() => navigate.push("/clinicals")} />
                             <ComboOption labelColor="text-white" label={"TH Food"} icon={<MdFastfood className="text-xl" />} onClick={() => navigate.push("/food")} />
-                            <ComboOption labelColor="text-white" label={"TH Salões & Barbearias"} icon={<BsScissors className="text-xl" />} onClick={() => navigate.push("/hairdressers")} />
+                            <ComboOption labelColor="text-white" label={"TH Clínicas"} icon={<MdMedicalServices className="text-xl" />} onClick={() => navigate.push("/clinicals")} />
                             <ComboOption labelColor="text-white" label={"TH Shop"} icon={<BiShoppingBag className="text-xl" />} onClick={() => navigate.push("/shop")} />
+                            <ComboOption labelColor="text-white" label={"TH Salões & Barbearias"} icon={<BsScissors className="text-xl" />} onClick={() => navigate.push("/hairdressers")} />
                         </ComboBox>
                     </li>   
                     <li className="group text-md font-medium transition-all hover:bg-default-blue h-full"><Link className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" href="https://thsolucoes.suport.systems/">Suporte</Link></li>

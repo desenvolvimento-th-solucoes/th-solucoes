@@ -27,7 +27,7 @@ const Web = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-8 min-h-screen py-12 lg:grid lg:grid-cols-2 xl:grid-cols-3">
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col shadow-lg shadow-slate-700">
+                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Emissão de Documentos Fiscais</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Emissão de documentos fiscais de forma descomplicada.</p>
                             <div className="grid grid-cols-2 gap-4 w-full">
@@ -39,7 +39,7 @@ const Web = () => {
                                 <div className="w-full p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-sm md:text-lg">MDFe</div>
                             </div>
                         </div>
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col shadow-lg shadow-slate-700">
+                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Fiscal e Contábil</h1>
                             <p className="text-xs sm:text-sm sm:text-md font-extralight mb-6 text-center lg:text-lg">Desenvolvido para MEI, ME, Simples, Lucro Real e Lucro Presumido.</p>
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full">
@@ -204,51 +204,51 @@ const Web = () => {
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Tipos de negócio do pequeno e médio varejo.</p>
                             <div className="w-full">
                                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <BsBag className="text-2xl lg:text-4xl" />
                                         <h1 className="text-sm lg:text-lg">Prestadores de Serviços</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <BiBookBookmark className="text-2xl lg:text-4xl" />
                                         <h1 className="text-sm lg:text-lg">Livrarias e Papelarias</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <GiChickenOven className="text-2xl lg:text-4xl" />
                                         <h1 className="text-sm lg:text-lg">Mercados e Açougues</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <GiClothes className="text-2xl lg:text-4xl" />
                                         <h1 className="text-sm lg:text-lg">Lojas de Roupas e Acessórios</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <GiBread className="text-2xl lg:text-4xl" />
                                         <h1 className="text-sm lg:text-lg">Panificadores e Cafeterias</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <BiDiamond className="text-2xl lg:text-4xl" />
                                         <h1 className="text-sm lg:text-lg">Joalherias e Óticas</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <GiFruitBowl className="text-2xl lg:text-4xl" />
                                         <h1 className="text-sm lg:text-lg">Horti-fruti e Verdureira</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <BsShopWindow className="text-2xl lg:text-4xl" />
                                         <h1 className="text-sm lg:text-lg">Conveniências</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <BiGift className="text-2xl lg:text-4xl" />
                                         <h1 className="text-sm lg:text-lg">Presentes e Variedades</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <IoConstruct className="text-2xl lg:text-4xl" />
                                         <h1 className="text-sm lg:text-lg">Contruções e Ferragens</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <BiCar className="text-2xl lg:text-4xl" />
                                         <h1 className="text-sm lg:text-lg">Autopeças e Oficinas</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
                                         <BiWorld className="text-2xl lg:text-4xl" />
                                         <h1 className="text-sm lg:text-lg">Outros</h1>
                                     </div>

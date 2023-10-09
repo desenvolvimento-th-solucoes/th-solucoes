@@ -19,16 +19,16 @@ const Agribusiness = () => {
     const router = useRouter();
     return (
         <MainLayout typeOfButtonInteraction={1}>
-            <main className="w-full h-full bg-default-blue">
-                <section className="container mx-auto text-white px-4">
+            <main className="w-full h-full bg-white">
+                <section className="container mx-auto text-black px-4">
                     <div className="flex items-center pt-20">
-                        <div className="rounded-lg text-white">
+                        <div className="rounded-lg text-black">
                             <h1 className="font-bold mb-4 text-center text-lg sm:text-xl md:text-3xl lg:text-5xl">Plataforma TH Agro</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">O TH Agro é um sistema projetado especificamente para atender às necessidades das pessoas envolvidas no agronegócio. Ele oferece uma variedade de recursos e funcionalidades para simplificar e otimizar as operações relacionadas à agricultura e pecuária.</p>
                         </div>
                     </div>
                     <div className="flex flex-col gap-8 min-h-screen py-12 lg:grid lg:grid-cols-2 xl:grid-cols-3">
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col shadow-lg shadow-slate-700">
+                        <div className="bg-default-blue text-white rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Emissão de Documentos Fiscais</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Emissão de documentos fiscais de forma descomplicada.</p>
                             <div className="grid grid-cols-3 gap-4 w-full">
@@ -37,7 +37,7 @@ const Agribusiness = () => {
                                 <div className="w-full p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-sm md:text-lg">MDFe</div>
                             </div>
                         </div>
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col shadow-lg shadow-slate-700">
+                        <div className="bg-default-blue text-white rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Fiscal e Contábil</h1>
                             <p className="text-xs sm:text-sm sm:text-md font-extralight mb-6 text-center lg:text-lg">NFPe, CTe, MDFe, Lucro Real e Lucro Presumido.</p>
                             <div className="gap-4 w-full flex items-center justify-center">
@@ -90,11 +90,11 @@ const Agribusiness = () => {
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Gerenciamento Completo</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Integrado com 98% das prefeituras do Brasil e atende a legislação de todos os estados.</p>
                             <div className="flex flex-col gap-4 w-full">
-                                <div className="rounded-lg w-full p-4 bg-white text-black flex items-center justify-center text-sm md:text-lg"><div><BiPlusCircle className="text-default-blue text-2xl mr-2" /></div>Desenvolvimento para Pessoa Física (CPF)</div>
-                                <div className="rounded-lg w-full p-4 bg-white text-black flex items-center justify-center text-sm md:text-lg"><div><BiPlusCircle className="text-default-blue text-2xl mr-2" /></div>Lucro Real e Presumido</div>
+                                <div className="rounded-lg w-full p-4 bg-default-blue text-white flex items-center justify-center text-sm md:text-lg"><div><BiPlusCircle className="text-default-blue text-2xl mr-2" /></div>Desenvolvimento para Pessoa Física (CPF)</div>
+                                <div className="rounded-lg w-full p-4 bg-default-blue text-white flex items-center justify-center text-sm md:text-lg"><div><BiPlusCircle className="text-default-blue text-2xl mr-2" /></div>Lucro Real e Presumido</div>
                             </div>
                         </div>
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
+                        <div className="bg-default-blue text-white rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Controle de Finanças</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">A gestão financeira eficaz, garantindo estabilidade e tomada de decisões inteligentes para o negócio.</p>
                             <div className="w-full flex justify-center">
@@ -118,7 +118,7 @@ const Agribusiness = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
+                        <div className="bg-default-blue text-white rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Agro Fiscal</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Cadastre vários produtos rurais e emita notas fiscais independentes.</p>
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full lg:grid-cols-2">
@@ -135,7 +135,7 @@ const Agribusiness = () => {
                                 <div className="w-full p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Dados Variados</div>
                             </div>
                         </div>
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
+                        <div className="bg-default-blue text-white rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Gestão Inteligente</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Fácil interpretação e controle de suas operações.</p>
                             <div className="w-full flex justify-center mb-6">
@@ -157,28 +157,28 @@ const Agribusiness = () => {
                                 <div className="w-full p-2 flex items-center justify-center text-center text-xs bg-blue-200 text-blue-400 font-bold rounded-lg md:text-md lg:text-lg">Relatórios</div>
                             </div>
                         </div>
-                        <div className="bg-white col-span-1 text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
+                        <div className="bg-default-blue col-span-1 text-white rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Segmentos</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Tipos de negócio do pequeno e médio varejo.</p>
                             <div className="w-full">
                                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <LuWheat className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md">Produtor Rural</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <PiWarehouseLight className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md">Fazendas</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <AiOutlineTeam className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md">Cooperativas</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <MdOutlineBlindsClosed className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md">Associações</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col shadow-lg rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <LiaTractorSolid className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md">Agronegócio em Geral</h1>
                                     </div>
@@ -211,8 +211,8 @@ const Agribusiness = () => {
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Envie-nos uma mensagem.</p>
                             <div>
                                 <div className="mb-8">
-                                    <Button.Root defaultTextColor="text-white" label="Mande-nos uma mensagem" hoverTextColor="group-hover:text-white" onClick={() => router.push("/contact")}>
-                                        <Button.Icon color="" icon={<AiOutlineMessage className="absolute left-0 ml-3" />} backgroundColor="bg-black" />
+                                    <Button.Root defaultTextColor="text-black" label="Mande-nos uma mensagem" hoverTextColor="group-hover:text-white" onClick={() => router.push("/contact")}>
+                                        <Button.Icon color="text-white" icon={<AiOutlineMessage className="absolute left-0 ml-3" />} backgroundColor="bg-black" />
                                     </Button.Root>
                                 </div>
                                 <div>
