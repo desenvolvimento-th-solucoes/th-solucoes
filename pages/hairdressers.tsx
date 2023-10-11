@@ -177,7 +177,7 @@ const Hairdressers = () => {
                             <div>
                                 <div className="mb-8">
                                     <Button.Root defaultTextColor="text-white" label="Mande-nos uma mensagem" hoverTextColor="group-hover:text-white" onClick={() => router.push("/contact")}>
-                                        <Button.Icon color="" icon={<AiOutlineMessage className="absolute left-0 ml-3" />} backgroundColor="bg-black" />
+                                        <Button.Icon color="bg-default-blue" icon={<AiOutlineMessage className="absolute left-0 ml-3" />} backgroundColor="bg-black" />
                                     </Button.Root>
                                 </div>
                                 <div>

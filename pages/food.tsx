@@ -19,7 +19,7 @@ const Food = () => {
     const router = useRouter();
     return (
         <MainLayout typeOfButtonInteraction={1}>
-            <main className="bg-black w-full h-full">
+            <main className="bg-red-800 w-full h-full">
                 <section className="container mx-auto text-white px-4">
                     <div className="flex items-center pt-20">
                         <div className="rounded-lg text-white">
@@ -32,18 +32,18 @@ const Food = () => {
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Emissão de Documentos Fiscais</h1>
                             <p className="text-xs sm:text-sm sm:text-md font-extralight mb-6 text-center lg:text-lg">Emita documentos fiscais de forma descomplicada.</p>
                             <div className="gap-4 w-full flex items-center justify-center">
-                                <div className="w-max px-4 py-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-lg">NFe</div>
-                                <div className="w-max px-4 py-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-lg">NFCe</div>
+                                <div className="w-max px-4 py-2 flex items-center justify-center bg-red-200 text-red-400 font-bold rounded-lg text-lg">NFe</div>
+                                <div className="w-max px-4 py-2 flex items-center justify-center bg-red-200 text-red-400 font-bold rounded-lg text-lg">NFCe</div>
                             </div>
                         </div>
                         <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Fiscal e Contábil</h1>
                             <p className="text-xs sm:text-sm sm:text-md font-extralight mb-6 text-center lg:text-lg">Desenvolvido para MEI, ME, Simples, Lucro Real e Lucro Presumido.</p>
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full">
-                                <div className="w-full p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-xs md:text-md">Sintegra</div>
-                                <div className="w-full p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-xs md:text-md">Sped Fiscal</div>
-                                <div className="w-full p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-xs md:text-md">Contribuições</div>
-                                <div className="w-full p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-xs md:text-md">Bloco K</div>
+                                <div className="w-full p-2 flex items-center justify-center bg-red-200 text-red-400 font-bold rounded-lg text-xs md:text-md">Sintegra</div>
+                                <div className="w-full p-2 flex items-center justify-center bg-red-200 text-red-400 font-bold rounded-lg text-xs md:text-md">Sped Fiscal</div>
+                                <div className="w-full p-2 flex items-center justify-center bg-red-200 text-red-400 font-bold rounded-lg text-xs md:text-md">Contribuições</div>
+                                <div className="w-full p-2 flex items-center justify-center bg-red-200 text-red-400 font-bold rounded-lg text-xs md:text-md">Bloco K</div>
                             </div>
                         </div>
                         <div className="h-full w-full p-4 flex items-center justify-center flex-col">
@@ -92,27 +92,27 @@ const Food = () => {
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Gerenciamento Completo</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Integrado com 98% das prefeituras do Brasil e atende a legislação de todos os estados.</p>
                             <div className="flex flex-col gap-4 w-full">
-                                <div className="rounded-lg w-full p-4 bg-white text-black flex items-center justify-center text-sm md:text-lg"><div><BiPlusCircle className="text-default-blue text-2xl mr-2" /></div>Entrada de Notas Automáticas</div>
-                                <div className="rounded-lg w-full p-4 bg-white text-black flex items-center justify-center text-sm md:text-lg"><div><BiPlusCircle className="text-default-blue text-2xl mr-2" /></div>Painel do Contador Gratuito</div>
+                                <div className="rounded-lg w-full p-4 bg-white text-black flex items-center justify-center text-sm md:text-lg"><div><BiPlusCircle className="text-red-800 text-2xl mr-2" /></div>Entrada de Notas Automáticas</div>
+                                <div className="rounded-lg w-full p-4 bg-white text-black flex items-center justify-center text-sm md:text-lg"><div><BiPlusCircle className="text-red-800 text-2xl mr-2" /></div>Painel do Contador Gratuito</div>
                             </div>
                         </div>
                         <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Frente de Caixa e PDV</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Frente de caixa e PDV confiáveis e seguros.</p>
                             <div className="grid grid-cols-2 gap-4 w-full">
-                                <div className="w-full p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Controle de Caixa</div>
-                                <div className="w-full p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Emissão de NFCe</div>
-                                <div className="w-full col-span-2 p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Venda Rápida</div>
+                                <div className="w-full p-2 flex items-center justify-center bg-red-200 text-red-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Controle de Caixa</div>
+                                <div className="w-full p-2 flex items-center justify-center bg-red-200 text-red-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Emissão de NFCe</div>
+                                <div className="w-full col-span-2 p-2 flex items-center justify-center bg-red-200 text-red-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Venda Rápida</div>
                             </div>
                         </div>
                         <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Controle de Estoque</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Maior veracidade sobre o seu estoque em suas mãos.</p>
                             <div className="grid grid-cols-2 gap-4 w-full">
-                                <div className="w-full p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Controle de Produção</div>
-                                <div className="w-full p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Etiquetas</div>
-                                <div className="w-full p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Códigos</div>
-                                <div className="w-full p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Dados Variados</div>
+                                <div className="w-full p-2 flex items-center justify-center bg-red-200 text-red-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Controle de Produção</div>
+                                <div className="w-full p-2 flex items-center justify-center bg-red-200 text-red-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Etiquetas</div>
+                                <div className="w-full p-2 flex items-center justify-center bg-red-200 text-red-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Códigos</div>
+                                <div className="w-full p-2 flex items-center justify-center bg-red-200 text-red-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Dados Variados</div>
                             </div>
                         </div>
                         <div className="lg:col-span-2 bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
@@ -120,35 +120,35 @@ const Food = () => {
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Tipos de negócio do pequeno e médio varejo.</p>
                             <div className="w-full">
                                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-red-800 text-white">
                                         <FaBeer className="text-2xl lg:text-4xl" />
                                         <h1>Bares</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-red-800 text-white">
                                         <FaSpoon className="text-2xl lg:text-4xl" />
                                         <h1>Restaurantes</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-red-800 text-white">
                                         <FaPizzaSlice className="text-2xl lg:text-4xl" />
                                         <h1>Pizzarias</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-red-800 text-white">
                                         <MdOutlineSportsMotorsports className="text-2xl lg:text-4xl" />
                                         <h1>Delivery</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-red-800 text-white">
                                         <FaBreadSlice className="text-2xl lg:text-4xl" />
                                         <h1>Padarias</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-red-800 text-white">
                                         <GiCupcake className="text-2xl lg:text-4xl" />
                                         <h1>Docerias</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-red-800 text-white">
                                         <CiShop className="text-2xl lg:text-4xl" />
                                         <h1>Lanchonetes</h1>
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 text-xs lg:text-lg transition-all bg-red-800 text-white">
                                         <FaTrailer className="text-2xl lg:text-4xl" />
                                         <h1>Trailers & Foodtrucks</h1>
                                     </div>
@@ -174,7 +174,7 @@ const Food = () => {
                                     </li>
                                 </ul>
                                 <div className="mb-10">
-                                    <ButtonDefault loadder={false} label="Agendar uma chamada" ></ButtonDefault>
+                                    <ButtonDefault defaultColor="bg-black" loadder={false} label="Agendar uma chamada" ></ButtonDefault>
                                 </div>
                             </div>
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Fale Conosco</h1>

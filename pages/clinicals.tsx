@@ -21,23 +21,23 @@ const Clinicals = () => {
     const router = useRouter();
     return (
         <MainLayout typeOfButtonInteraction={1}>
-            <main className="w-full h-full bg-default-blue">
-                <section className="container mx-auto text-white px-4">
+            <main className="w-full h-full bg-white">
+                <section className="container mx-auto text-black px-4">
                     <div className="flex items-center pt-20">
-                        <div className="rounded-lg text-white">
+                        <div className="rounded-lg text-black">
                             <h1 className="font-bold mb-4 text-center text-lg sm:text-xl md:text-3xl lg:text-5xl">Plataforma TH Clínicas</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">O sistema TH Clínicas foi cuidadosamente elaborado para atender às necessidades de clínicas médicas e profissionais da saúde. Ele oferece uma ampla gama de recursos e funcionalidades projetados para simplificar e otimizar as operações relacionadas à gestão de clínicas e atendimento médico. </p>
                         </div>
                     </div>
                     <div className="flex flex-col gap-8 min-h-screen py-12 lg:grid lg:grid-cols-2 xl:grid-cols-3">
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
+                        <div className="bg-default-blue text-white rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Emissão de Documentos Fiscais</h1>
                             <p className="text-xs sm:text-sm sm:text-md font-extralight mb-6 text-center lg:text-lg">Emita documentos fiscais de forma descomplicada.</p>
                             <div className="gap-4 w-full flex items-center justify-center">
                                 <div className="w-max px-4 py-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-lg">NFSe</div>
                             </div>
                         </div>
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
+                        <div className="bg-default-blue text-white rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Fiscal e Contábil</h1>
                             <p className="text-xs sm:text-sm sm:text-md font-extralight mb-6 text-center lg:text-lg">Desenvolvido para MEI, ME, Simples, Lucro Real e Lucro Presumido.</p>
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full">
@@ -88,11 +88,11 @@ const Clinicals = () => {
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Gerenciamento Completo</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Integrado com 98% das prefeituras do Brasil e atende a legislação de todos os estados.</p>
                             <div className="flex flex-col gap-4 w-full">
-                                <div className="rounded-lg w-full p-4 bg-white text-black flex items-center justify-center text-sm md:text-lg"><div><BiPlusCircle className="text-default-blue text-2xl mr-2" /></div>Entrada de Notas Automáticas</div>
-                                <div className="rounded-lg w-full p-4 bg-white text-black flex items-center justify-center text-sm md:text-lg"><div><BiPlusCircle className="text-default-blue text-2xl mr-2" /></div>Painel do Contador Gratuito</div>
+                                <div className="rounded-lg w-full p-4 bg-default-blue text-white flex items-center justify-center text-sm md:text-lg"><div><BiPlusCircle className="text-default-blue text-2xl mr-2" /></div>Entrada de Notas Automáticas</div>
+                                <div className="rounded-lg w-full p-4 bg-default-blue text-white flex items-center justify-center text-sm md:text-lg"><div><BiPlusCircle className="text-default-blue text-2xl mr-2" /></div>Painel do Contador Gratuito</div>
                             </div>
                         </div>
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
+                        <div className="bg-default-blue text-white rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Controle de Finanças</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">A gestão financeira eficaz, garantindo estabilidade e tomada de decisões inteligentes para o negócio.</p>
                             <div className="w-full flex justify-center">
@@ -128,7 +128,7 @@ const Clinicals = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
+                        <div className="bg-default-blue text-white rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Discrição</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Comunicação discreta entre médicos e secretários(as)</p>
                             <div className="grid grid-cols-2 gap-4 w-full">
@@ -137,7 +137,7 @@ const Clinicals = () => {
                                 <div className="w-full col-span-2 p-2 flex items-center justify-center bg-blue-200 text-blue-400 font-bold rounded-lg text-xs text-center md:text-sm lg:text-lg">Segurança</div>
                             </div>
                         </div>
-                        <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
+                        <div className="bg-default-blue text-white rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Gestão Inteligente</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Fácil interpretação e controle de suas operações.</p>
                             <div className="w-full flex justify-center mb-6">
@@ -159,52 +159,52 @@ const Clinicals = () => {
                                 <div className="w-full p-2 flex items-center justify-center text-center text-xs bg-blue-200 text-blue-400 font-bold rounded-lg md:text-md lg:text-lg">Relatórios</div>
                             </div>
                         </div>                    
-                        <div className=" bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
+                        <div className=" bg-default-blue text-white rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Segmentos</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Tipos de negócio do pequeno e médio varejo.</p>
                             <div className="w-full">
                                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <FaClinicMedical className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md mt-2">Clínicas</h1>   
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <HiOutlineOfficeBuilding className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md mt-2">Consultórios</h1>   
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <FaUserDoctor className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md mt-2">Médicos</h1>    
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <PiToothBold className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md mt-2">Dentistas</h1>  
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <PiWheelchairFill className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md mt-2">Fisioterapeutas</h1>    
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <IoEarSharp className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md mt-2">Fonoaudiólogos</h1> 
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <CiApple className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md mt-2">Nutricionistas</h1> 
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <BiBrain className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md mt-2">Psicólogos</h1> 
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <AiOutlineHeart className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md mt-2">Terapeutas Ocupacionais</h1>    
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <PiNeedleLight className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md mt-2">Esteticistas</h1>   
                                     </div>
-                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-default-blue text-white">
+                                    <div className="flex text-center items-center w-full justify-center flex-col rounded-lg p-4 transition-all bg-white text-black">
                                         <MdHealthAndSafety className="text-2xl lg:text-4xl" />
                                         <h1 className="text-xs lg:text-md mt-2">Profissionais da Saúde</h1> 
                                     </div>
@@ -237,12 +237,12 @@ const Clinicals = () => {
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">Envie-nos uma mensagem.</p>
                             <div>
                                 <div className="mb-8">
-                                    <Button.Root defaultTextColor="text-white" label="Mande-nos uma mensagem" hoverTextColor="group-hover:text-white" onClick={() => router.push("/contact")}>
-                                        <Button.Icon color="" icon={<AiOutlineMessage className="absolute left-0 ml-3" />} backgroundColor="bg-black" />
+                                    <Button.Root defaultTextColor="text-black" label="Mande-nos uma mensagem" hoverTextColor="group-hover:text-white" onClick={() => router.push("/contact")}>
+                                        <Button.Icon color="text-white" icon={<AiOutlineMessage className="absolute left-0 ml-3" />} backgroundColor="bg-black" />
                                     </Button.Root>
                                 </div>
                                 <div>
-                                    <Button.Root hoverTextColor="group-hover:text-white" defaultTextColor={"text-white"} label="Envie uma mensagem" onClick={() => redirect("https://api.whatsapp.com/send/?phone=5519910005366&text&type=phone_number&app_absent=0")}>
+                                    <Button.Root hoverTextColor="group-hover:text-white" defaultTextColor={"text-black"} label="Envie uma mensagem" onClick={() => redirect("https://api.whatsapp.com/send/?phone=5519910005366&text&type=phone_number&app_absent=0")}>
                                         <Button.Icon backgroundColor="bg-green-700" color="text-white" icon={<FaWhatsapp className="absolute left-0 ml-3" />} />
                                     </Button.Root>
                                 </div>

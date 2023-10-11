@@ -7,11 +7,14 @@ type Props = {
     flexible?: boolean;
     icon?: React.ReactElement;
     loadder: boolean;
+    defaultColor?: string;
+    hoverColor?: string;
+    textColor?: string;
 }
 
-export const ButtonDefault = ({ onClick, label, flexible, icon, className, loadder }: Props) => {
+export const ButtonDefault = ({ onClick, label, flexible, icon, className, loadder, hoverColor, defaultColor, textColor }: Props) => {
     return (
-        <button className={`${className ?? ""} ${loadder && "pointer-events-none"} flex items-center justify-between ${flexible && "w-full"} ${!flexible && "w-max"}  bg-default-blue text-white rounded-xl text-center font-medium z-10 hover:-translate-y-2 transition-all hover:shadow-lg hover:shadow-gray-700 hover:bg-black`} onClick={onClick}>
+        <button className={`${className ?? ""} ${loadder && "pointer-events-none"} flex items-center justify-between ${flexible && "w-full"} ${!flexible && "w-max"}  ${defaultColor ?? "bg-default-blue"} ${textColor ?? "text-white"} rounded-xl text-center font-medium z-10 hover:-translate-y-2 transition-all hover:shadow-lg hover:shadow-gray-700 ${hoverColor && "hover:" + hoverColor}`} onClick={onClick}>
             {loadder && (
                 <div className={`${loadder ? "animate-spin mx-4" : ""}`}>
                     <BsArrowRepeat className="text-xl text-white" />

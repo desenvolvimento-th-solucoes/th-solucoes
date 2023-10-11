@@ -274,7 +274,7 @@ const Web = () => {
                                     </li>
                                 </ul>
                                 <div className="mb-10">
-                                    <ButtonDefault loadder={false} label="Agendar uma chamada" ></ButtonDefault>
+                                    <ButtonDefault defaultColor="bg-black" loadder={false} label="Agendar uma chamada" ></ButtonDefault>
                                 </div>
                             </div>
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Fale Conosco</h1>
