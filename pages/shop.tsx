@@ -87,7 +87,7 @@ const Shop = () => {
                                     </li>
                                     <li className="flex items-center mb-2 w-full text-xs md:text-md lg:text-lg">
                                         <div><BiCheckCircle className="text-green-500 text-xl mr-2" /></div>
-                                        Avante Web
+                                        TH Web
                                     </li>
                                     <li className="flex items-center mb-2 w-full text-xs md:text-md lg:text-lg">
                                         <div><BiCheckCircle className="text-green-500 text-xl mr-2" /></div>
