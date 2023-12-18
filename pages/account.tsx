@@ -1,6 +1,6 @@
 "use client";
 
-import MainLayout from "@/app/App";
+import MainLayout from "@/layouts/App";
 import { api } from "@/app/api/api";
 import { Input } from "@/app/components/Input";
 import { RequireAuthentication } from "@/app/components/RequireAuthentication";

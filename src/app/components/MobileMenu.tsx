@@ -67,6 +67,7 @@ export const MobileMenu = ({ show, onClick, handleShowMore, showMore }: Props) =
                 <li className="group border-b-2 border-b-gray-800 text-md font-medium transition-all w-full"><a className="group-hover:text-white flex justify-start px-8 py-4 items-center hover:bg-default-blue w-full active:bg-default-blue cursor-pointer" href="https://thsolucoes.suport.systems/">Suporte</a></li>
                 {authenticationContext?.localStorageData.loggedUser && authenticationContext.localStorageData.isLogged && (
                     <>
+                        <li className="group text-md font-medium transition-all w-full"><a className="group-hover:text-white flex justify-center py-4 items-center hover:bg-default-blue w-full active:bg-default-blue" onClick={() => router.push("/restrict/management/usersAdmin")}>Área do Administrador</a></li>
                         <li className="group text-md font-medium transition-all w-full"><a className="group-hover:text-white flex justify-center py-4 items-center hover:bg-default-blue w-full active:bg-default-blue" onClick={() => router.push("/account")}>Conta</a></li>
                         <li className="group text-md font-medium transition-all w-full"><a className="group-hover:text-white flex text-red-700 justify-center py-4 items-center hover:bg-red-700 w-full active:bg-red-700" onClick={() => handleAskLogout()}>Sair</a></li>     
                     </>    

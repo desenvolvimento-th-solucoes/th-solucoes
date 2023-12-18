@@ -1,16 +1,16 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
-import { InteractionButton } from "./components/button/InteractionButton";
-import { Master } from "./components/master";
+import { InteractionButton } from "../app/components/button/InteractionButton";
+import { Master } from "../app/components/master";
 import { AiOutlineArrowUp, AiOutlineArrowDown, AiOutlineArrowLeft } from "react-icons/ai";
-import { AuthenticationContext } from "./context/AuthenticationContext";
+import { AuthenticationContext } from "../app/context/AuthenticationContext";
 import { useContext } from "react";
 import { useRouter } from "next/router";
 
 type Props = {
     children: React.ReactNode;
-    typeOfButtonInteraction: 1 | 2;
+    typeOfButtonInteraction?: 1 | 2;
 }
 
 function MainLayout({ children, typeOfButtonInteraction }: Props) {

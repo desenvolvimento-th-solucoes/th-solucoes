@@ -1,4 +1,4 @@
-import MainLayout from "@/app/App";
+import MainLayout from "@/layouts/App";
 import { Button } from "@/app/components/button";
 import { ButtonDefault } from "@/app/components/button/ButtonDefault";
 import router from "next/router";

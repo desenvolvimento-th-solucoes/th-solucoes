@@ -19,7 +19,7 @@ import { InteractionButton } from '../../src/app/components/button/InteractionBu
 import { validator } from "../../src/app/features/validator";
 import { useRouter } from "next/router";
 import '../../src/app/globals.css';
-import RestrictLayout from "@/app/Restrict";
+import RestrictLayout from "@/layouts/Restrict";
 import Link from "next/link";
 
 const RestrictLogin = () => {
@@ -166,7 +166,7 @@ const RestrictLogin = () => {
                     message={"Preencha os campos corretamente!"}
                     show={showWarning}
                     icon={<AiFillWarning className="text-2xl" />}
-                    contextColor="yellow-500"
+                    contextColor="white"
                 />
                 <Modal
                     onClick={closeModal}

@@ -6,7 +6,7 @@ import { NormalCard } from "@/app/components/cards/NormalCard";
 import { PiTargetBold } from "react-icons/pi";
 import { IoDiamondOutline, IoEye } from "react-icons/io5";
 import '../src/app/globals.css';
-import MainLayout from "@/app/App";
+import MainLayout from "@/layouts/App";
 
 const About = () => {
     return (

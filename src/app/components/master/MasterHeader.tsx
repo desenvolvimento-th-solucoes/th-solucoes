@@ -4,7 +4,7 @@ import { ComboBox } from "../ComboBox";
 import { ComboOption } from "../ComboOption";
 import { BiMenuAltRight, BiPowerOff, BiShoppingBag } from "react-icons/bi";
 import { HiOutlineUserCircle } from "react-icons/hi";
-import { MdFastfood, MdMedicalServices, MdOutlineManageAccounts } from "react-icons/md";
+import { MdAdminPanelSettings, MdFastfood, MdMedicalServices, MdOutlineManageAccounts } from "react-icons/md";
 import { MobileMenu } from "../MobileMenu";
 import { useRouter } from "next/router";
 import { features } from "@/app/features/features";
@@ -78,6 +78,7 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                         <div className={`hidden ${!hidden && "xl:flex"} gap-4 h-full lg:items-center lg:justify-center`}>
                             <p>Olá, {features.toCapitalize(authenticationContext.localStorageData.loggedUser.name)}</p>
                             <ComboBox icon={<HiOutlineUserCircle className="text-white text-2xl" />}>
+                                <ComboOption labelColor="text-white" label={"Área do Administrador"} icon={<MdAdminPanelSettings className="text-xl" />} onClick={() => navigate.push("/restrict/management/usersAdmin")} />
                                 <ComboOption labelColor="text-white" label={"Conta"} icon={<MdOutlineManageAccounts className="text-xl" />} onClick={() => navigate.push("/account")} />
                                 <ComboOption labelColor="text-red-700 font-medium" label={"Sair"} icon={<BiPowerOff className="text-red-700 text-xl" />} onClick={handleAskLogout} />
                             </ComboBox>

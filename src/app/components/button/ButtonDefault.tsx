@@ -1,7 +1,7 @@
 import { BsArrowRepeat } from "react-icons/bs";
 
 type Props = {
-    onClick?: (event?: React.MouseEvent<HTMLButtonElement, MouseEvent | undefined>) => void;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
     label: string;
     className?: string;
     flexible?: boolean;

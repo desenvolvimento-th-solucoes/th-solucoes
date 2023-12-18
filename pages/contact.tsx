@@ -13,7 +13,7 @@ import { BsTelephone } from "react-icons/bs";
 import { PiPaperPlaneRight } from "react-icons/pi";
 import { validator } from "@/app/features/validator";
 import '../src/app/globals.css';
-import MainLayout from "@/app/App";
+import MainLayout from "@/layouts/App";
 import { api } from "@/app/api/api";
 import { Warning } from "@/app/components/Warning";
 import { Modal } from "@/app/components/Modal";
@@ -167,7 +167,7 @@ const Contact = () => {
                 message={"Preencha os campos corretamente!"}
                 show={warning}
                 icon={<AiFillWarning className="text-2xl" />}
-                contextColor="yellow-500"
+                contextColor="white"
             />
             <Modal
                 onClick={() => closeModal()}

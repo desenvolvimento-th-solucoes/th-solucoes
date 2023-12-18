@@ -22,7 +22,7 @@ import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { InteractionButton } from '../../src/app/components/button/InteractionButton';
 import { useRouter } from "next/router";
 import '../../src/app/globals.css';
-import RestrictLayout from "@/app/Restrict";
+import RestrictLayout from "@/layouts/Restrict";
 import Link from "next/link";
 
 const RestrictRegister = () => {
@@ -340,7 +340,7 @@ const RestrictRegister = () => {
         }
 
         setError(newErrors);
-    }, [filledOutCorrectly]);
+    }, [filledOutCorrectly, inputValue]);
 
 
     const handleNext = () => {
@@ -403,7 +403,7 @@ const RestrictRegister = () => {
                     message={"Preencha os campos corretamente!"}
                     show={warning.fw}
                     icon={<AiFillWarning className="text-2xl" />}
-                    contextColor="yellow-500"
+                    contextColor="white"
                 />
                 <Modal
                     onClick={closeModal}

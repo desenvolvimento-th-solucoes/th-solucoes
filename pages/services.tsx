@@ -10,7 +10,7 @@ import { MdSecurity } from "react-icons/md";
 import { MdOutlineManageHistory } from "react-icons/md";
 import { features } from "@/app/features/features";
 import '../src/app/globals.css';
-import MainLayout from "@/app/App";
+import MainLayout from "@/layouts/App";
 import Image from "next/image";
 
 const Services = () => {

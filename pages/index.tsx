@@ -9,7 +9,7 @@ import { TypingAnimation } from "@/app/components/TypingAnimation";
 import { validator } from "@/app/features/validator";
 import { BsFillPlusCircleFill } from "react-icons/bs";
 import { useRouter } from "next/router";
-import MainLayout from "@/app/App";
+import MainLayout from "@/layouts/App";
 
 const Index = () => {
     const [error, setError] = useState("");

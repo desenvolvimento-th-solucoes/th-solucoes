@@ -59,16 +59,16 @@ const RootLayout = ({ Component, pageProps }: AppProps) => {
     }, [loading]);
 
     useEffect(() => {
-        if(!localStorage.getItem("allowCookies")) {
+        if (!localStorage.getItem("allowCookies")) {
             setTimeout(() => setHiddenAllowCookies(false), 3000);
         }
     }, []);
-    
+
     return (
         <AuthenticationProvider>
             <Component {...pageProps} />
             {loading && <LoadingScreen />}
-            <AcceptCookies handleAllow={handleAllow} handleDeny={handleDeny} hidden={hiddenAllowCookies}/>
+            <AcceptCookies handleAllow={handleAllow} handleDeny={handleDeny} hidden={hiddenAllowCookies} />
         </AuthenticationProvider>
     );
 }

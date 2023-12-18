@@ -1,6 +1,6 @@
 "use client";
 
-import MainLayout from "@/app/App";
+import MainLayout from "@/layouts/App";
 import { Button } from "@/app/components/button";
 import { useRouter } from "next/router";
 import { AiOutlineScissor, AiOutlineMessage } from "react-icons/ai";
