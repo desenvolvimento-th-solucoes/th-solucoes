@@ -10,6 +10,7 @@ import { validator } from "@/app/features/validator";
 import { BsFillPlusCircleFill } from "react-icons/bs";
 import { useRouter } from "next/router";
 import MainLayout from "@/layouts/App";
+import { SpecialMessage } from "@/app/components/SpecialMessage";
 
 const Index = () => {
     const [error, setError] = useState("");
@@ -40,6 +41,7 @@ const Index = () => {
 
     return (
         <MainLayout typeOfButtonInteraction={1}>
+            <SpecialMessage />
             <main className="w-full h-full">
                 <section className="h-screen flex items-center bg-default-blue bg-cover px-4 bg-none lg:bg-default lg:bg-left">
                     <div className="container mx-auto">
@@ -66,7 +68,7 @@ const Index = () => {
                     </div>
                 </section>
                 <div className="bg-default-blue h-5 w-screen">
-                    
+
                 </div>
                 <section className="h-max w-screen bg-default-black text-white py-12 px-4">
                     <div className="container mx-auto flex flex-col items-center w-full">
