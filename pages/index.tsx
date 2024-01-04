@@ -17,7 +17,7 @@ const Index = () => {
     const [emailNewsletter, setEmailNewsletter] = useState("");
     const [filledOutCorrectly, setFilledOutCorrectly] = useState(false);
     const [disable, setDisable] = useState(false);
-    const [showMessage, setShowMessage] = useState(true);
+    // const [showMessage, setShowMessage] = useState(true);
 
     const handleInputChange = (value: string) => {
         setEmailNewsletter(value);
@@ -42,7 +42,7 @@ const Index = () => {
 
     return (
         <MainLayout typeOfButtonInteraction={1}>
-            <SpecialMessage onClick={() => setShowMessage(false)} show={showMessage} />
+            {/* <SpecialMessage onClick={() => setShowMessage(false)} show={showMessage} /> */}
             <main className="w-full h-full">
                 <section className="h-screen flex items-center bg-default-blue bg-cover px-4 bg-none lg:bg-default lg:bg-left">
                     <div className="container mx-auto">
