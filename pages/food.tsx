@@ -11,6 +11,7 @@ import { FaBeer } from "react-icons/fa";
 import { CiShop } from "react-icons/ci";
 import { MdOutlineSportsMotorsports } from "react-icons/md";
 import { GiCupcake } from "react-icons/gi";
+import Link from "next/link";
 
 const Food = () => {
     const redirect = (target: string) => {
@@ -27,6 +28,7 @@ const Food = () => {
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">O TH Food é uma plataforma completa projetada para atender às necessidades de estabelecimentos de alimentos, como restaurantes, cafés, lanchonetes, bares e food trucks. Este sistema oferece uma ampla variedade de recursos e funcionalidades para otimizar a gestão e operação desses negócios.</p>
                         </div>
                     </div>
+                    <Link href="https://thfood.thsistemas.tec.br" className="w-full flex justify-center hover:underline text-sm font-semibold p-2">Acesse clicando neste link! 👈</Link>
                     <div className="flex flex-col gap-8 min-h-screen py-12 lg:grid lg:grid-cols-2 xl:grid-cols-3">
                         <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Emissão de Documentos Fiscais</h1>

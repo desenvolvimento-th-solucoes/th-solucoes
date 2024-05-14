@@ -10,6 +10,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { IoConstruct } from "react-icons/io5";
 import { GiBread, GiChickenOven, GiClothes, GiFruitBowl } from "react-icons/gi";
 import { ButtonDefault } from "@/app/components/button/ButtonDefault";
+import Link from "next/link";
 
 const Web = () => {
     const redirect = (target: string) => {
@@ -26,6 +27,7 @@ const Web = () => {
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">O sistema TH Web é como um painel de controle virtual para empresas. Ele oferece uma interface fácil de usar e recursos para gerenciar finanças, estoque, vendas, e muito mais. Você pode controlar e tomar decisões com base em informações importantes, tudo em um só lugar. É como ter o controle total do seu negócio na ponta dos seus dedos.</p>
                         </div>
                     </div>
+                    <Link href="https://thweb.thsistemas.tec.br" className="w-full flex justify-center hover:underline text-sm font-semibold p-2">Acesse clicando neste link! 👈</Link>
                     <div className="flex flex-col gap-8 min-h-screen py-12 lg:grid lg:grid-cols-2 xl:grid-cols-3">
                         <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Emissão de Documentos Fiscais</h1>
@@ -192,7 +194,7 @@ const Web = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="grid grid-cols-1 gap-4 w-full sm:grid-cols-2">                                
+                            <div className="grid grid-cols-1 gap-4 w-full sm:grid-cols-2">
                                 <div className="w-full p-2 flex items-center justify-center text-center text-xs bg-blue-200 text-blue-400 font-bold rounded-lg md:text-md lg:text-lg">Dashboard</div>
                                 <div className="w-full p-2 flex items-center justify-center text-center text-xs bg-blue-200 text-blue-400 font-bold rounded-lg md:text-md lg:text-lg">Gráficos Detalhados</div>
                                 <div className="w-full p-2 flex items-center justify-center text-center text-xs bg-blue-200 text-blue-400 font-bold rounded-lg md:text-md lg:text-lg">Ajuda</div>
@@ -292,8 +294,8 @@ const Web = () => {
                                 </div>
                             </div>
                         </div>
-                        
-                        
+
+
                     </div>
                 </section>
             </main>

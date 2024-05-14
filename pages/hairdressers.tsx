@@ -8,6 +8,7 @@ import { BiCheckCircle, BiPlusCircle } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa6";
 import { ButtonDefault } from "@/app/components/button/ButtonDefault";
 import { TbMoustache } from "react-icons/tb";
+import Link from "next/link";
 
 const Hairdressers = () => {
     const redirect = (target: string) => {
@@ -24,6 +25,7 @@ const Hairdressers = () => {
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">O TH Salões & Barbearias é uma plataforma de gestão completa desenvolvida especificamente para atender às necessidades de salões de beleza e barbearias. Este sistema oferece uma ampla gama de recursos e funcionalidades para otimizar a operação desses estabelecimentos de cuidados pessoais.</p>
                         </div>
                     </div>
+                    <Link href="https://thsaloes.thsistemas.tec.br" className="w-full flex justify-center hover:underline text-sm font-semibold p-2">Acesse clicando neste link! 👈</Link>
                     <div className="flex flex-col gap-8 min-h-screen py-12 lg:grid lg:grid-cols-2 xl:grid-cols-3">
                         <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Emissão de Documentos Fiscais</h1>

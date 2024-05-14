@@ -13,6 +13,7 @@ import { PiToothBold, PiWheelchairFill, PiNeedleLight } from "react-icons/pi";
 import { IoEarSharp } from "react-icons/io5";
 import { CiApple } from "react-icons/ci";
 import { MdHealthAndSafety } from "react-icons/md";
+import Link from "next/link";
 
 const Clinicals = () => {
     const redirect = (target: string) => {
@@ -29,6 +30,7 @@ const Clinicals = () => {
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">O sistema TH Clínicas foi cuidadosamente elaborado para atender às necessidades de clínicas médicas e profissionais da saúde. Ele oferece uma ampla gama de recursos e funcionalidades projetados para simplificar e otimizar as operações relacionadas à gestão de clínicas e atendimento médico. </p>
                         </div>
                     </div>
+                    <Link href="https://thclinicas.thsistemas.tec.br" className="w-full flex justify-center hover:underline text-sm font-semibold p-2">Acesse clicando neste link! 👈</Link>
                     <div className="flex flex-col gap-8 min-h-screen py-12 lg:grid lg:grid-cols-2 xl:grid-cols-3">
                         <div className="bg-default-blue text-white rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Emissão de Documentos Fiscais</h1>

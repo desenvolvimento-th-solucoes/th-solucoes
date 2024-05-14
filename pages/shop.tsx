@@ -6,6 +6,7 @@ import { AiOutlineMessage } from "react-icons/ai";
 import { BiCheckCircle, BiPlusCircle, BiShoppingBag } from "react-icons/bi";
 import { CiShoppingCart } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa6";
+import Link from "next/link";
 
 const Shop = () => {
     const redirect = (target: string) => {
@@ -21,6 +22,7 @@ const Shop = () => {
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">O TH Shop é uma plataforma de gestão completa desenvolvida especificamente para atender às necessidades de lojas e varejo. Este sistema oferece uma ampla gama de recursos e funcionalidades para otimizar a operação desses estabelecimentos de comércios.</p>
                         </div>
                     </div>
+                    <Link href="https://thshop.thsistemas.tec.br" className="w-full flex justify-center hover:underline text-sm font-semibold p-2">Acesse clicando neste link! 👈</Link>
                     <div className="flex flex-col gap-8 min-h-screen py-12 lg:grid lg:grid-cols-2 xl:grid-cols-3">
                         <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Recursos Principais</h1>

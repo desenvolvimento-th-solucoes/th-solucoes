@@ -11,6 +11,7 @@ import { LuWheat } from "react-icons/lu";
 import { MdOutlineBlindsClosed } from "react-icons/md";
 import { PiWarehouseLight } from "react-icons/pi";
 import { LiaTractorSolid } from "react-icons/lia";
+import Link from "next/link";
 
 const Agribusiness = () => {
     const redirect = (target: string) => {
@@ -27,6 +28,7 @@ const Agribusiness = () => {
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">O TH Agro é um sistema projetado especificamente para atender às necessidades das pessoas envolvidas no agronegócio. Ele oferece uma variedade de recursos e funcionalidades para simplificar e otimizar as operações relacionadas à agricultura e pecuária.</p>
                         </div>
                     </div>
+                    <Link href="https://thagro.thsistemas.tec.br" className="w-full flex justify-center hover:underline text-sm font-semibold p-2">Acesse clicando neste link! 👈</Link>
                     <div className="flex flex-col gap-8 min-h-screen py-12 lg:grid lg:grid-cols-2 xl:grid-cols-3">
                         <div className="bg-white text-black rounded-lg h-full w-full p-4 flex items-center justify-center flex-col">
                             <h1 className="font-bold text-center text-md sm:text-lg md:text-xl lg:text-2xl">Emissão de Documentos Fiscais</h1>
