@@ -250,7 +250,7 @@ const Contact = () => {
                                         <p className="text-center lg:text-left">Rua Dr. Jose Alves, 313-B - Centro Mogi Mirim - São Paulo, 13800-050, Brazil</p>
                                     </div>
                                 </div>
-                                <div className="flex items-center mt-4 mb-8 flex-col lg:flex-row">
+                                <div className="flex items-center mt-4 mb-10 flex-col lg:flex-row">
                                     <div className="rounded-full w-10 h-10 bg-sky-700 text-white flex items-center justify-center mr-0 mb-4 lg:mr-4 lg:mb-0">
                                         <BsTelephone className="text-xl" />
                                     </div>
