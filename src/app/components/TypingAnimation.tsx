@@ -23,7 +23,7 @@ export const TypingAnimation = () => {
 
     return (
         <div className="inline-block overflow-hidden border-r-2 border-r-white leading-normal">
-            <span className="typing-text text-lg font-bold ml-2 h-max sm:text-2xl md:text-4xl lg:text-6xl">{displayText}</span>
+            <span className="typing-text text-md font-bold ml-2 h-max sm:text-2xl md:text-4xl lg:text-6xl">{displayText}</span>
             <span className="typing-cursor"></span>
         </div>
     );

@@ -45,12 +45,12 @@ const Index = () => {
             {/* <SpecialMessage onClick={() => setShowMessage(false)} show={showMessage} /> */}
             <main className="w-full h-full">
                 <section className="h-screen flex items-center bg-default-blue bg-cover px-4 bg-none lg:bg-default lg:bg-left">
-                    <div className="container mx-auto">
+                    <div className="w-full md:container md:mx-auto">
                         <div className="w-full h-max flex items-center text-white">
                             <div className="h-full w-1 bg-default-blue"></div>
-                            <div className="relative">
-                                <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl justify-center font-bold leading-normal lg:justify-start flex items-center">TH Soluções: <TypingAnimation /></h1>
-                                <p className="text-sm sm:text-md md:text-lg text-center bg-black/75 p-2 rounded-lg font-extralight">Soluções altamente eficientes em Tecnologia da Informação para impulsionar a produtividade e o desempenho de sua empresa.</p>
+                            <div className="relative w-max">
+                                <h1 className="text-lg sm:text-2xl md:text-4xl lg:text-6xl justify-center font-bold leading-normal lg:justify-start flex items-center">TH Soluções: <TypingAnimation /></h1>
+                                <p className="text-sm sm:text-md md:text-lg text-center md:text-left bg-black/75 p-2 rounded-lg font-extralight">Soluções altamente eficientes em Tecnologia da Informação para impulsionar a produtividade e o desempenho de sua empresa.</p>
                             </div>
                         </div>
                     </div>
@@ -68,9 +68,7 @@ const Index = () => {
                         </div>
                     </div>
                 </section>
-                <div className="bg-default-blue h-5 w-screen">
-
-                </div>
+                <div className="bg-default-blue h-5 w-screen"></div>
                 <section className="h-max w-screen bg-default-black text-white py-12 px-4">
                     <div className="container mx-auto flex flex-col items-center w-full">
                         <h2 className="text-3xl font-bold mb-4">Newsletter</h2>

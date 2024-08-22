@@ -209,7 +209,6 @@ const RestrictLogin = () => {
                             }}
                         />
                         <div className="w-full flex flex-col-reverse items-center sm:flex-row sm:items-center sm:justify-between">
-                            <a href="" className="text-default-blue text-sm mt-4 sm:mt-0 hover:underline">Esqueceu a sua senha?</a>
                             {!loading && (
                                 <Button.Root hoverTextColor="group-hover:text-white" defaultTextColor={"text-white"} label="Entrar" onClick={(event) => {
                                     event?.preventDefault();
@@ -222,10 +221,10 @@ const RestrictLogin = () => {
                                 <ButtonDefault loadder={true} className="pointer-events-none" label="Aguarde..." icon={<BsArrowRepeat className="text-xl text-white" />} />
                             )}
                         </div>
-                        <p className="mt-4 text-white text-sm">
+                        {/* <p className="mt-4 text-white text-sm">
                             Ainda não é membro?
                             <Link onClick={() => navigate.push("/restrict/register")} href="/restrict/register" className="text-default-blue hover:underline font-bold ml-1">Registre-se.</Link>
-                        </p>
+                        </p> */}
                     </form>
                 </section>
             </main>

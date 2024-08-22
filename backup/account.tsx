@@ -59,6 +59,10 @@ const Account = () => {
         confirmPassword: ""
     });
 
+    useEffect(() => {
+        navigate.push("/");
+    }, []);
+
     const handleInputChange = (inputName: "name" | "last_name" | "email" | "password" | "confirmPassword" | "telephone", value: string) => {
         setInputValue((prevInput) => ({
             ...prevInput,
