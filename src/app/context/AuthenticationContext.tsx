@@ -55,12 +55,10 @@ export const AuthenticationProvider: React.FC<Props> = ({ children }) => {
     }
 
     const logout = async () => {
-        if (localStorage.getItem("allowCookies")) {
-            const response = await api.destroy();
-            if (response !== undefined && response.message === "The session was finished.") {
-                setLocalStorageData({ isLogged: false, loggedUser: null });
-                localStorage.removeItem(LOCAL_STORAGE_KEY);
-            }
+        const response = await api.destroy();
+        if (response !== undefined && response.message === "The session was finished.") {
+            setLocalStorageData({ isLogged: false, loggedUser: null });
+            localStorage.removeItem(LOCAL_STORAGE_KEY);
         }
     }
 
