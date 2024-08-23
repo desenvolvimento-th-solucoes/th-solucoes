@@ -25,7 +25,7 @@ const LOCAL_STORAGE_KEY = "logged_user";
 export const AuthenticationProvider: React.FC<Props> = ({ children }) => {
     const [localStorageData, setLocalStorageData] = useState<LocalStorage>({
         allowCookies: false,
-        isLogged: false, 
+        isLogged: false,
         loggedUser: {
             id: 0,
             name: "",
@@ -36,23 +36,21 @@ export const AuthenticationProvider: React.FC<Props> = ({ children }) => {
     });
 
     const loginManager = async () => {
-        if (localStorage.getItem("allowCookies")) {
-            const response = await api.check();
-            if (response !== undefined && response.message === "Authenticated") {
-                localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(response));
-                setLocalStorageData({
-                    isLogged: true,
-                    loggedUser: {
-                        id: response.logged_user.id,
-                        name: response.logged_user.name,
-                        last_name: response.logged_user.last_name,
-                        email: response.logged_user.email,
-                        telephone: response.logged_user.telephone,
-                    }
-                });
-            } else {
-                setLocalStorageData({ isLogged: false, loggedUser: null });
-            }
+        const response = await api.check();
+        if (response !== undefined && response.message === "Authenticated") {
+            localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(response));
+            setLocalStorageData({
+                isLogged: true,
+                loggedUser: {
+                    id: response.logged_user.id,
+                    name: response.logged_user.name,
+                    last_name: response.logged_user.last_name,
+                    email: response.logged_user.email,
+                    telephone: response.logged_user.telephone,
+                }
+            });
+        } else {
+            setLocalStorageData({ isLogged: false, loggedUser: null });
         }
     }
 

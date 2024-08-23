@@ -38,6 +38,7 @@ export const api = {
             const response = await request.data;
             return response;
         } catch (error) {
+            console.error("Erro na Solicitação!");
             console.error(error);
         }
     },
