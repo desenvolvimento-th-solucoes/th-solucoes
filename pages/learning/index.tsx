@@ -5,13 +5,13 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import { videos } from "../../src/data/videos";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Drumstick, Globe, Hospital, Scissors, ShoppingBag, Wheat } from "lucide-react";
 import { RequireAuthentication } from "@/app/components/RequireAuthentication";
 import { useContext } from "react";
 import { AuthenticationContext } from "@/app/context/AuthenticationContext";
+import * as videos from "../../videos.json";
 
 const Index = () => {
     const router = useRouter();
