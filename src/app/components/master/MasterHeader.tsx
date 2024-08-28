@@ -82,8 +82,7 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                 {authenticationContext?.localStorageData.loggedUser && authenticationContext.localStorageData.isLogged ? (
                     <button className="flex items-center gap-2">
                         <div className={`hidden ${!hidden && "xl:flex"} gap-4 h-full lg:items-center lg:justify-center`}>
-                            <p className="font-semibold">Olá, {features.toCapitalize(authenticationContext.localStorageData.loggedUser.name)}</p>
-                            <ComboBox icon={<HiOutlineUserCircle className="text-white text-2xl" />}>
+                            <ComboBox label={`Olá, ${features.toCapitalize(authenticationContext.localStorageData.loggedUser.name)}`} icon={<HiOutlineUserCircle className="text-white text-2xl" />}>
                                 <ComboOption labelColor="text-white" label={"Treinamentos"} icon={<MdAdminPanelSettings className="text-xl" />} href={"/learning"} />
                                 {/* <ComboOption labelColor="text-white" label={"Conta"} icon={<MdOutlineManageAccounts className="text-xl" />} href={"/account")} > */}
                                 <ComboOption onClick={handleAskLogout} href="/" labelColor="text-red-700 font-semibold" label={"Sair"} icon={<BiPowerOff className="text-red-700 text-xl" />} />
