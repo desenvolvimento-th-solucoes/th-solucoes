@@ -13,6 +13,8 @@ import { AiOutlineInfo } from "react-icons/ai";
 import { BsGlobe, BsScissors } from "react-icons/bs";
 import { FaCarrot } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
+import React from "react";
 
 export const MasterHeader = ({ enable }: { enable: boolean }) => {
     const authenticationContext = useContext(AuthenticationContext);
@@ -36,10 +38,14 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
     const openMenu = () => setShowMenu(true);
     const closeMenu = () => setShowMenu(false);
 
+    React.useEffect(() => {
+        console.log(navigate.pathname)
+    })
+
     return (
-        <header className={`${!enable && "bg- h-20"} ${navigate.pathname === "/clinicals" && "shadow-gray-800 shadow-lg bg-default-black"} ${enable && "h-24 shadow-gray-800 shadow-lg bg-default-black"} duration-slow z-40 transition-all w-screen text-white flex justify-center fixed`}>
+        <header className={`${!enable && navigate.pathname !== "/clinicals" && navigate.pathname !== "/learning" && "bg-transparent h-20"} ${!enable && (navigate.pathname === "/clinicals" || navigate.pathname === "/learning") && "h-20 shadow-gray-800 shadow-lg bg-default-black"} ${enable && "h-24 shadow-gray-800 shadow-lg bg-default-black"} duration-slow z-40 transition-all w-screen text-white flex justify-center fixed`}>
             <nav className="container mx-auto flex items-center justify-between h-full w-full relative px-4">
-                <Link href="/" className="h-full pl-4 flex items-center z-10"><img width={200} height={60} src="/assets/images/th-solucoes-logo1.png" alt="" /></Link>
+                <Link href="/" className="h-full pl-4 flex items-center z-10"><Image width={200} height={60} src="/assets/images/th-solucoes-logo1.png" alt="" /></Link>
                 <ul className="hidden xl:flex items-center justify-center h-full">
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link href="/" className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full">Início</Link></li>
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link href="/services" className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full">Serviços</Link></li>
@@ -74,9 +80,9 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                     onClickSecondOption={() => setShowModal(false)}
                 />
                 {authenticationContext?.localStorageData.loggedUser && authenticationContext.localStorageData.isLogged ? (
-                    <div className="flex items-center gap-4">
+                    <button className="flex items-center gap-2">
                         <div className={`hidden ${!hidden && "xl:flex"} gap-4 h-full lg:items-center lg:justify-center`}>
-                            <p>Olá, {features.toCapitalize(authenticationContext.localStorageData.loggedUser.name)}</p>
+                            <p className="font-semibold">Olá, {features.toCapitalize(authenticationContext.localStorageData.loggedUser.name)}</p>
                             <ComboBox icon={<HiOutlineUserCircle className="text-white text-2xl" />}>
                                 <ComboOption labelColor="text-white" label={"Treinamentos"} icon={<MdAdminPanelSettings className="text-xl" />} href={"/learning"} />
                                 {/* <ComboOption labelColor="text-white" label={"Conta"} icon={<MdOutlineManageAccounts className="text-xl" />} href={"/account")} > */}
@@ -87,7 +93,7 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                             <BiMenuAltRight className="text-3xl" />
                         </button>
                         <MobileMenu handleShowMore={() => setShowMore(!showMore)} showMore={showMore} onClick={closeMenu} show={showMenu} />
-                    </div>
+                    </button>
                 ) : (
                     <>
                         {authenticationContext?.localStorageData.loggedUser && authenticationContext.localStorageData.isLogged ? (

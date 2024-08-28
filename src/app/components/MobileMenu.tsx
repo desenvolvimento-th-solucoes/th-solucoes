@@ -4,6 +4,7 @@ import { AuthenticationContext } from "../context/AuthenticationContext";
 import { Modal } from "./Modal";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { X } from "lucide-react";
 
 type Props = {
     onClick: () => void;
@@ -43,7 +44,7 @@ export const MobileMenu = ({ show, onClick, handleShowMore, showMore }: Props) =
                 onClickSecondOption={() => setShowModal(false)}
             />
             <button onClick={onClick} className="w-full flex justify-start p-4 bg-default-blue z-10">
-                <AiOutlineInfo className="text-white text-3xl"/>
+                <X className="text-white text-3xl"/>
             </button>
             <ul className={`flex flex-col items-center justify-center transition-all mt-10`}>
                 <li className="group border-b-2 border-b-gray-800 text-md font-medium transition-all w-full"><Link className="group-hover:text-white flex justify-start px-8 py-4 items-center hover:bg-default-blue w-full active:bg-default-blue cursor-pointer" href="/">Início</Link></li>

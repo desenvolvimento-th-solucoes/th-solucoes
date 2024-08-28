@@ -20,7 +20,7 @@ const Index = () => {
     return (
         <MainLayout typeOfButtonInteraction={1}>
             <RequireAuthentication authenticationContext={authenticationContext}>
-                <div className="px-4 lg:px-[115px] mx-auto pt-[120px] min-h-screen">
+                <div className="px-4 lg:px-[115px] mx-auto pt-32 min-h-screen">
                     <h1 className="text-md font-bold md:text-xl lg:text-3xl flex items-center">Treinamentos TH Sistemas<span className="text-[14px] md:text-[20px] text-gray-500 ml-2">(vídeos)</span></h1>
                     <Accordion type="single" collapsible className="w-full">
                         <AccordionItem value="item-1">
