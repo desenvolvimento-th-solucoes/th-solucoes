@@ -1,20 +1,14 @@
-import { useEffect, useState } from "react";
-import { FaSpinner } from "react-icons/fa6"
+type Props = {
+    enable: boolean;
+    destroy: boolean;
+}
 
-const LoadingScreen = () => {
-    const [problem, setProblem] = useState(false);
-    
-    useEffect(() => {
-        setTimeout(() => setProblem(true), 8000);
-    }, []);
-
+export const LoadingScreen = ({ enable, destroy }: Props) => {
     return (
-        <div className={`bg-black flex-col w-screen h-screen fixed inset-0 flex items-center justify-center z-40 transition-all duration-slow`}>
-            <FaSpinner className="text-blue-600 text-6xl animate-spin" />
-            <h1 className="text-white text-lg mt-4">Aguarde...</h1>
-            {problem && <p className="text-white flex flex-col items-center absolute bottom-2 transition-all">Parece que algo deu errado ☹️<a href="" className="text-blue-600 font-bold">Clique aqui</a></p>}
+        <div className={`${enable ? 'fade-in' : 'fade-out'} ${destroy && 'hidden'} flex items-center justify-center h-screen w-screen fixed z-50 dark:bg-black/80 bg-white/80 inset-0`} aria-label="Aguarde, estamos carregando o conteúdo para você...">
+            <div className="flex flex-col items-center justify-center">
+                <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent border-solid rounded-full animate-spin"></div>
+            </div>
         </div>
     )
 }
-
-export default LoadingScreen;

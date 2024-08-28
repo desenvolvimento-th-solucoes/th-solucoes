@@ -21,7 +21,7 @@ const Web = () => {
         <MainLayout typeOfButtonInteraction={1}>
             <main className="w-full h-full bg-default-blue">
                 <section className="text-white px-4 container mx-auto">
-                    <div className="flex items-center pt-20">
+                    <div className="flex items-center pt-32">
                         <div className="rounded-lg text-white">
                             <h1 className="font-bold mb-4 text-center text-lg sm:text-xl md:text-3xl lg:text-5xl">Plataforma TH WEB</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">O sistema TH Web é como um painel de controle virtual para empresas. Ele oferece uma interface fácil de usar e recursos para gerenciar finanças, estoque, vendas, e muito mais. Você pode controlar e tomar decisões com base em informações importantes, tudo em um só lugar. É como ter o controle total do seu negócio na ponta dos seus dedos.</p>

@@ -22,7 +22,7 @@ const Food = () => {
         <MainLayout typeOfButtonInteraction={1}>
             <main className="bg-red-800 w-full h-full">
                 <section className="container mx-auto text-white px-4">
-                    <div className="flex items-center pt-20">
+                    <div className="flex items-center pt-32">
                         <div className="rounded-lg text-white">
                             <h1 className="font-bold mb-4 text-center text-lg sm:text-xl md:text-3xl lg:text-5xl">Plataforma TH Food</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">O TH Food é uma plataforma completa projetada para atender às necessidades de estabelecimentos de alimentos, como restaurantes, cafés, lanchonetes, bares e food trucks. Este sistema oferece uma ampla variedade de recursos e funcionalidades para otimizar a gestão e operação desses negócios.</p>

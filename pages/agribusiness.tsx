@@ -22,7 +22,7 @@ const Agribusiness = () => {
         <MainLayout typeOfButtonInteraction={1}>
             <main className="w-full h-full bg-green-700">
                 <section className="container mx-auto text-white px-4">
-                    <div className="flex items-center pt-20">
+                    <div className="flex items-center pt-32">
                         <div className="rounded-lg text-white">
                             <h1 className="font-bold mb-4 text-center text-lg sm:text-xl md:text-3xl lg:text-5xl">Plataforma TH Agro</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">O TH Agro é um sistema projetado especificamente para atender às necessidades das pessoas envolvidas no agronegócio. Ele oferece uma variedade de recursos e funcionalidades para simplificar e otimizar as operações relacionadas à agricultura e pecuária.</p>

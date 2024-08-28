@@ -16,7 +16,7 @@ const Shop = () => {
         <MainLayout typeOfButtonInteraction={1}>
             <main className="w-full h-full bg-indigo-800">
                 <section className="text-white px-4 container mx-auto">
-                    <div className="flex items-center pt-20">
+                    <div className="flex items-center pt-32">
                         <div className="rounded-lg text-white">
                             <h1 className="font-bold mb-4 text-center text-lg sm:text-xl md:text-3xl lg:text-5xl">Plataforma TH Shop</h1>
                             <p className="text-xs sm:text-sm md:text-md font-extralight mb-6 text-center lg:text-lg">O TH Shop é uma plataforma de gestão completa desenvolvida especificamente para atender às necessidades de lojas e varejo. Este sistema oferece uma ampla gama de recursos e funcionalidades para otimizar a operação desses estabelecimentos de comércios.</p>

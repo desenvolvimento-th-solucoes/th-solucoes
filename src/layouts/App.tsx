@@ -26,14 +26,6 @@ function MainLayout({ children, typeOfButtonInteraction }: Props) {
         });
     }, []);
 
-    const handleBottom = useCallback(() => {
-        window.scrollTo({
-            top: 400,
-            left: 0,
-            behavior: "smooth",
-        });
-    }, []);
-
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 200) {
@@ -58,14 +50,14 @@ function MainLayout({ children, typeOfButtonInteraction }: Props) {
 
     return (
         <>
-            {typeOfButtonInteraction === 1 && (
+            {/* {typeOfButtonInteraction === 1 && (
                 <InteractionButton
                     type={2}
                     enable={enableButton.top}
                     onClick={handleBottom}
                     icon={<AiOutlineArrowDown className="text-white text-2xl" />}
                 />
-            )}
+            )} */}
             {typeOfButtonInteraction === 2 && (
                 <InteractionButton
                 enable={true}
