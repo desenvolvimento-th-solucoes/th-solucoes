@@ -33,10 +33,10 @@ const Index = () => {
                             <AccordionContent className="flex flex-col gap-2">
                                 {videos.thweb.map((video: any) => {
                                     return (
-                                        <article className="flex items-center pb-2 justify-between gap-2 border-b border-b-gray-200">
+                                        <Link onClick={() => router.push("/learning")} href={`/api/download?filepath=${encodeURIComponent(video.url)}`} className="hover:underline flex items-center pb-2 justify-between gap-2 border-b border-b-gray-200">
                                             <h2 className="text-xs lg:text-[16px]">{video.label}</h2>
-                                            <Link onClick={() => router.push("/learning")} href={`/api/download?filepath=${encodeURIComponent(video.url)}`} className="py-2 px-4 rounded-sm border-2 border-default-blue text-default-blue">Download</Link>
-                                        </article>
+                                            <button className="py-2 px-4 rounded-sm border-2 border-default-blue text-default-blue">Download</button>
+                                        </Link>
                                     )
                                 })}
                             </AccordionContent>
@@ -51,10 +51,10 @@ const Index = () => {
                             <AccordionContent className="flex flex-col gap-2">
                                 {videos.thagro.map((video: any) => {
                                     return (
-                                        <article className="flex items-center pb-2 justify-between gap-2 border-b border-b-gray-200">
+                                        <Link onClick={() => router.push("/learning")} href={`/api/download?filepath=${encodeURIComponent(video.url)}`} className="hover:underline flex items-center pb-2 justify-between gap-2 border-b border-b-gray-200">
                                             <h2 className="text-xs lg:text-[16px]">{video.label}</h2>
-                                            <Link onClick={() => router.push("/learning")} href={`/api/download?filepath=${encodeURIComponent(video.url)}`} className="py-2 px-4 rounded-sm border-2 border-default-blue text-default-blue">Download</Link>
-                                        </article>
+                                            <button className="py-2 px-4 rounded-sm border-2 border-default-blue text-default-blue">Download</button>
+                                        </Link>
                                     )
                                 })}
                             </AccordionContent>
@@ -69,10 +69,10 @@ const Index = () => {
                             <AccordionContent className="flex flex-col gap-2">
                                 {videos.thfood.map((video: any) => {
                                     return (
-                                        <article className="flex items-center pb-2 justify-between gap-2 border-b border-b-gray-200">
+                                        <Link onClick={() => router.push("/learning")} href={`/api/download?filepath=${encodeURIComponent(video.url)}`} className="hover:underline flex items-center pb-2 justify-between gap-2 border-b border-b-gray-200">
                                             <h2 className="text-xs lg:text-[16px]">{video.label}</h2>
-                                            <Link onClick={() => router.push("/learning")} href={`/api/download?filepath=${encodeURIComponent(video.url)}`} className="py-2 px-4 rounded-sm border-2 border-default-blue text-default-blue">Download</Link>
-                                        </article>
+                                            <button className="py-2 px-4 rounded-sm border-2 border-default-blue text-default-blue">Download</button>
+                                        </Link>
                                     )
                                 })}
                             </AccordionContent>
@@ -87,10 +87,10 @@ const Index = () => {
                             <AccordionContent className="flex flex-col gap-2">
                                 {videos.thclinicas.map((video: any) => {
                                     return (
-                                        <article className="flex items-center pb-2 justify-between gap-2 border-b border-b-gray-200">
+                                        <Link onClick={() => router.push("/learning")} href={`/api/download?filepath=${encodeURIComponent(video.url)}`} className="hover:underline flex items-center pb-2 justify-between gap-2 border-b border-b-gray-200">
                                             <h2 className="text-xs lg:text-[16px]">{video.label}</h2>
-                                            <Link onClick={() => router.push("/learning")} href={`/api/download?filepath=${encodeURIComponent(video.url)}`} className="py-2 px-4 rounded-sm border-2 border-default-blue text-default-blue">Download</Link>
-                                        </article>
+                                            <button className="py-2 px-4 rounded-sm border-2 border-default-blue text-default-blue">Download</button>
+                                        </Link>
                                     )
                                 })}
                             </AccordionContent>
@@ -105,10 +105,10 @@ const Index = () => {
                             <AccordionContent className="flex flex-col gap-2">
                                 {videos.thshop.map((video: any) => {
                                     return (
-                                        <article className="flex items-center pb-2 justify-between gap-2 border-b border-b-gray-200">
+                                        <Link onClick={() => router.push("/learning")} href={`/api/download?filepath=${encodeURIComponent(video.url)}`} className="hover:underline flex items-center pb-2 justify-between gap-2 border-b border-b-gray-200">
                                             <h2 className="text-xs lg:text-[16px]">{video.label}</h2>
-                                            <Link onClick={() => router.push("/learning")} href={`/api/download?filepath=${encodeURIComponent(video.url)}`} className="py-2 px-4 rounded-sm border-2 border-default-blue text-default-blue">Download</Link>
-                                        </article>
+                                            <button className="py-2 px-4 rounded-sm border-2 border-default-blue text-default-blue">Download</button>
+                                        </Link>
                                     )
                                 })}
                             </AccordionContent>
@@ -123,10 +123,10 @@ const Index = () => {
                             <AccordionContent className="flex flex-col gap-2">
                                 {videos.thsaloes.map((video: any) => {
                                     return (
-                                        <article className="flex items-center pb-2 justify-between gap-2 border-b border-b-gray-200">
+                                        <Link onClick={() => router.push("/learning")} href={`/api/download?filepath=${encodeURIComponent(video.url)}`} className="hover:underline flex items-center pb-2 justify-between gap-2 border-b border-b-gray-200">
                                             <h2 className="text-xs lg:text-[16px]">{video.label}</h2>
-                                            <Link onClick={() => router.push("/learning")} href={`/api/download?filepath=${encodeURIComponent(video.url)}`} className="py-2 px-4 rounded-sm border-2 border-default-blue text-default-blue">Download</Link>
-                                        </article>
+                                            <button className="py-2 px-4 rounded-sm border-2 border-default-blue text-default-blue">Download</button>
+                                        </Link>
                                     )
                                 })}
                             </AccordionContent>
