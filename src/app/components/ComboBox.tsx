@@ -45,7 +45,7 @@ export const ComboBox = ({ children, label, icon }: Props) => {
             tabIndex={0}
             ref={comboBoxRef}
         >
-            <div className="flex items-center text-md font-semibold">
+            <div className="flex gap-2 items-center text-md font-semibold">
                 <h2 className="text-md">{ label }</h2>
                 { icon }
             </div>
