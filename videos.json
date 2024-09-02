@@ -27,7 +27,19 @@
         { "label": "Emissão de NFe Devolução", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NF-e Devolução.mp4" },
         { "label": "Emissão de NFe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NF-e.mp4" },
         { "label": "Emissão de NFCe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFC-e.mp4" },
-        { "label": "Emissão de NFSe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFS-e.mp4" }
+        { "label": "Emissão de NFSe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFS-e.mp4" },
+        { "label": "Erro 203", "url": "public/uploads/thweb/erros/Erro 203.mp4" },
+        { "label": "Erro 204", "url": "public/uploads/thweb/erros/Erro 204.mp4" },
+        { "label": "Erro 209", "url": "public/uploads/thweb/erros/Erro 209.mp4" },
+        { "label": "Erro 232", "url": "public/uploads/thweb/erros/Erro 232.mp4" },
+        { "label": "Erro 321", "url": "public/uploads/thweb/erros/Erro 321.mp4" },
+        { "label": "Erro 464", "url": "public/uploads/thweb/erros/Erro 464.mp4" },
+        { "label": "Erro 728", "url": "public/uploads/thweb/erros/Erro 728.mp4" },
+        { "label": "Erro 732", "url": "public/uploads/thweb/erros/Erro 732.mp4" },
+        { "label": "Erro 745", "url": "public/uploads/thweb/erros/Erro 745.mp4" },
+        { "label": "Erro 748", "url": "public/uploads/thweb/erros/Erro 748.mp4" },
+        { "label": "Erro 806", "url": "public/uploads/thweb/erros/Erro 806.mp4" },
+        { "label": "Erro Site Sefaz", "url": "public/uploads/thweb/erros/Erro Site Sefaz.mp4" }
     ],
     "thagro": [
         { "label": "Cadastro de Regra Fiscal", "url": "public/uploads/thweb/cadastros/Cadastro de Regra Fiscal.mp4" },
@@ -57,7 +69,19 @@
         { "label": "Emissão de NFe Devolução", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NF-e Devolução.mp4" },
         { "label": "Emissão de NFe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NF-e.mp4" },
         { "label": "Emissão de NFCe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFC-e.mp4" },
-        { "label": "Emissão de NFSe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFS-e.mp4" }
+        { "label": "Emissão de NFSe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFS-e.mp4" },
+        { "label": "Erro 203", "url": "public/uploads/thweb/erros/Erro 203.mp4" },
+        { "label": "Erro 204", "url": "public/uploads/thweb/erros/Erro 204.mp4" },
+        { "label": "Erro 209", "url": "public/uploads/thweb/erros/Erro 209.mp4" },
+        { "label": "Erro 232", "url": "public/uploads/thweb/erros/Erro 232.mp4" },
+        { "label": "Erro 321", "url": "public/uploads/thweb/erros/Erro 321.mp4" },
+        { "label": "Erro 464", "url": "public/uploads/thweb/erros/Erro 464.mp4" },
+        { "label": "Erro 728", "url": "public/uploads/thweb/erros/Erro 728.mp4" },
+        { "label": "Erro 732", "url": "public/uploads/thweb/erros/Erro 732.mp4" },
+        { "label": "Erro 745", "url": "public/uploads/thweb/erros/Erro 745.mp4" },
+        { "label": "Erro 748", "url": "public/uploads/thweb/erros/Erro 748.mp4" },
+        { "label": "Erro 806", "url": "public/uploads/thweb/erros/Erro 806.mp4" },
+        { "label": "Erro Site Sefaz", "url": "public/uploads/thweb/erros/Erro Site Sefaz.mp4" }
     ],
     "thfood": [
         { "label": "Cadastro de Regra Fiscal", "url": "public/uploads/thweb/cadastros/Cadastro de Regra Fiscal.mp4" },
@@ -87,7 +111,19 @@
         { "label": "Emissão de NFe Devolução", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NF-e Devolução.mp4" },
         { "label": "Emissão de NFe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NF-e.mp4" },
         { "label": "Emissão de NFCe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFC-e.mp4" },
-        { "label": "Emissão de NFSe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFS-e.mp4" }
+        { "label": "Emissão de NFSe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFS-e.mp4" },
+        { "label": "Erro 203", "url": "public/uploads/thweb/erros/Erro 203.mp4" },
+        { "label": "Erro 204", "url": "public/uploads/thweb/erros/Erro 204.mp4" },
+        { "label": "Erro 209", "url": "public/uploads/thweb/erros/Erro 209.mp4" },
+        { "label": "Erro 232", "url": "public/uploads/thweb/erros/Erro 232.mp4" },
+        { "label": "Erro 321", "url": "public/uploads/thweb/erros/Erro 321.mp4" },
+        { "label": "Erro 464", "url": "public/uploads/thweb/erros/Erro 464.mp4" },
+        { "label": "Erro 728", "url": "public/uploads/thweb/erros/Erro 728.mp4" },
+        { "label": "Erro 732", "url": "public/uploads/thweb/erros/Erro 732.mp4" },
+        { "label": "Erro 745", "url": "public/uploads/thweb/erros/Erro 745.mp4" },
+        { "label": "Erro 748", "url": "public/uploads/thweb/erros/Erro 748.mp4" },
+        { "label": "Erro 806", "url": "public/uploads/thweb/erros/Erro 806.mp4" },
+        { "label": "Erro Site Sefaz", "url": "public/uploads/thweb/erros/Erro Site Sefaz.mp4" }
     ],
     "thshop": [
         { "label": "Cadastro de Regra Fiscal", "url": "public/uploads/thweb/cadastros/Cadastro de Regra Fiscal.mp4" },
@@ -117,7 +153,19 @@
         { "label": "Emissão de NFe Devolução", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NF-e Devolução.mp4" },
         { "label": "Emissão de NFe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NF-e.mp4" },
         { "label": "Emissão de NFCe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFC-e.mp4" },
-        { "label": "Emissão de NFSe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFS-e.mp4" }
+        { "label": "Emissão de NFSe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFS-e.mp4" },
+        { "label": "Erro 203", "url": "public/uploads/thweb/erros/Erro 203.mp4" },
+        { "label": "Erro 204", "url": "public/uploads/thweb/erros/Erro 204.mp4" },
+        { "label": "Erro 209", "url": "public/uploads/thweb/erros/Erro 209.mp4" },
+        { "label": "Erro 232", "url": "public/uploads/thweb/erros/Erro 232.mp4" },
+        { "label": "Erro 321", "url": "public/uploads/thweb/erros/Erro 321.mp4" },
+        { "label": "Erro 464", "url": "public/uploads/thweb/erros/Erro 464.mp4" },
+        { "label": "Erro 728", "url": "public/uploads/thweb/erros/Erro 728.mp4" },
+        { "label": "Erro 732", "url": "public/uploads/thweb/erros/Erro 732.mp4" },
+        { "label": "Erro 745", "url": "public/uploads/thweb/erros/Erro 745.mp4" },
+        { "label": "Erro 748", "url": "public/uploads/thweb/erros/Erro 748.mp4" },
+        { "label": "Erro 806", "url": "public/uploads/thweb/erros/Erro 806.mp4" },
+        { "label": "Erro Site Sefaz", "url": "public/uploads/thweb/erros/Erro Site Sefaz.mp4" }
     ],
     "thclinicas": [
         { "label": "Cadastro de Regra Fiscal", "url": "public/uploads/thweb/cadastros/Cadastro de Regra Fiscal.mp4" },
@@ -147,7 +195,19 @@
         { "label": "Emissão de NFe Devolução", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NF-e Devolução.mp4" },
         { "label": "Emissão de NFe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NF-e.mp4" },
         { "label": "Emissão de NFCe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFC-e.mp4" },
-        { "label": "Emissão de NFSe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFS-e.mp4" }
+        { "label": "Emissão de NFSe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFS-e.mp4" },
+        { "label": "Erro 203", "url": "public/uploads/thweb/erros/Erro 203.mp4" },
+        { "label": "Erro 204", "url": "public/uploads/thweb/erros/Erro 204.mp4" },
+        { "label": "Erro 209", "url": "public/uploads/thweb/erros/Erro 209.mp4" },
+        { "label": "Erro 232", "url": "public/uploads/thweb/erros/Erro 232.mp4" },
+        { "label": "Erro 321", "url": "public/uploads/thweb/erros/Erro 321.mp4" },
+        { "label": "Erro 464", "url": "public/uploads/thweb/erros/Erro 464.mp4" },
+        { "label": "Erro 728", "url": "public/uploads/thweb/erros/Erro 728.mp4" },
+        { "label": "Erro 732", "url": "public/uploads/thweb/erros/Erro 732.mp4" },
+        { "label": "Erro 745", "url": "public/uploads/thweb/erros/Erro 745.mp4" },
+        { "label": "Erro 748", "url": "public/uploads/thweb/erros/Erro 748.mp4" },
+        { "label": "Erro 806", "url": "public/uploads/thweb/erros/Erro 806.mp4" },
+        { "label": "Erro Site Sefaz", "url": "public/uploads/thweb/erros/Erro Site Sefaz.mp4" }
     ],
     "thsaloes": [
         { "label": "Cadastro de Regra Fiscal", "url": "public/uploads/thweb/cadastros/Cadastro de Regra Fiscal.mp4" },
@@ -177,6 +237,18 @@
         { "label": "Emissão de NFe Devolução", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NF-e Devolução.mp4" },
         { "label": "Emissão de NFe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NF-e.mp4" },
         { "label": "Emissão de NFCe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFC-e.mp4" },
-        { "label": "Emissão de NFSe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFS-e.mp4" }
+        { "label": "Emissão de NFSe", "url": "public/uploads/thweb/emissao_fiscal/Emissão de NFS-e.mp4" },
+        { "label": "Erro 203", "url": "public/uploads/thweb/erros/Erro 203.mp4" },
+        { "label": "Erro 204", "url": "public/uploads/thweb/erros/Erro 204.mp4" },
+        { "label": "Erro 209", "url": "public/uploads/thweb/erros/Erro 209.mp4" },
+        { "label": "Erro 232", "url": "public/uploads/thweb/erros/Erro 232.mp4" },
+        { "label": "Erro 321", "url": "public/uploads/thweb/erros/Erro 321.mp4" },
+        { "label": "Erro 464", "url": "public/uploads/thweb/erros/Erro 464.mp4" },
+        { "label": "Erro 728", "url": "public/uploads/thweb/erros/Erro 728.mp4" },
+        { "label": "Erro 732", "url": "public/uploads/thweb/erros/Erro 732.mp4" },
+        { "label": "Erro 745", "url": "public/uploads/thweb/erros/Erro 745.mp4" },
+        { "label": "Erro 748", "url": "public/uploads/thweb/erros/Erro 748.mp4" },
+        { "label": "Erro 806", "url": "public/uploads/thweb/erros/Erro 806.mp4" },
+        { "label": "Erro Site Sefaz", "url": "public/uploads/thweb/erros/Erro Site Sefaz.mp4" }
     ]
 }
