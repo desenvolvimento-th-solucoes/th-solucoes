@@ -1,4 +1,11 @@
 {
+    "presentations": [
+        { "label": "Apresentação TH Web", "url": "public/uploads/apresentacoes/TH Web.mp4"},
+        { "label": "Apresentação TH Agro", "url": "public/uploads/apresentacoes/TH Agro.mp4"},
+        { "label": "Apresentação TH Food", "url": "public/uploads/apresentacoes/TH Food.mp4"},
+        { "label": "Apresentação TH Clinicas", "url": "public/uploads/apresentacoes/TH Clinicas.mp4"},
+        { "label": "Apresentação TH Saloes", "url": "public/uploads/apresentacoes/TH Saloes.mp4"}
+    ],
     "thweb": [
         { "label": "Cadastro de Regra Fiscal", "url": "public/uploads/thweb/cadastros/Cadastro de Regra Fiscal.mp4" },
         { "label": "Cadastro de Natureza de Operação", "url": "public/uploads/thweb/cadastros/Cadastro de Natureza de Operacao.mp4" },

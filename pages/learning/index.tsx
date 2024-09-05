@@ -21,6 +21,15 @@ const Index = () => {
         <MainLayout typeOfButtonInteraction={1}>
             <RequireAuthentication authenticationContext={authenticationContext}>
                 <div className="px-4 lg:px-[115px] mx-auto pt-32 min-h-screen">
+                    <h1 className="text-md font-bold md:text-xl lg:text-3xl flex items-center">Apresentações TH Sistemas</h1>
+                    {videos.presentations.map((video: any) => {
+                        return (
+                            <Link onClick={() => router.push("/learning")} href={`/api/download?filepath=${encodeURIComponent(video.url)}`} className="hover:underline flex items-center pb-2 justify-between gap-2 border-b border-b-gray-200">
+                                <h2 className="text-xs lg:text-[16px]">{video.label}</h2>
+                                <button className="py-2 px-4 rounded-sm border-2 border-default-blue text-default-blue">Download</button>
+                            </Link>
+                        )
+                    })}
                     <h1 className="text-md font-bold md:text-xl lg:text-3xl flex items-center">Treinamentos TH Sistemas<span className="text-[14px] md:text-[20px] text-gray-500 ml-2">(vídeos)</span></h1>
                     <Accordion type="single" collapsible className="w-full">
                         <AccordionItem value="item-1">
