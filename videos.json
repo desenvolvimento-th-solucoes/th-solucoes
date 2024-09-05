@@ -1,7 +1,7 @@
 {
     "thweb": [
         { "label": "Cadastro de Regra Fiscal", "url": "public/uploads/thweb/cadastros/Cadastro de Regra Fiscal.mp4" },
-        { "label": "Cadastro de Natureza de Operação", "url": "public/uploads/thweb/cadastros/Cadastro de Natureza de Operação.mp4" },
+        { "label": "Cadastro de Natureza de Operação", "url": "public/uploads/thweb/cadastros/Cadastro de Natureza de Operacao.mp4" },
         { "label": "Cadastro de Serviço", "url": "public/uploads/thweb/cadastros/Cadastro de Serviço.mp4" },
         { "label": "Cadastro de Caixa", "url": "public/uploads/thweb/cadastros/Cadastro de Caixa.mp4" },
         { "label": "Cadastro de Veículo", "url": "public/uploads/thweb/cadastros/Cadastro de Veículo.mp4" },
@@ -43,7 +43,7 @@
     ],
     "thagro": [
         { "label": "Cadastro de Regra Fiscal", "url": "public/uploads/thweb/cadastros/Cadastro de Regra Fiscal.mp4" },
-        { "label": "Cadastro de Natureza de Operação", "url": "public/uploads/thweb/cadastros/Cadastro de Natureza de Operação.mp4" },
+        { "label": "Cadastro de Natureza de Operação", "url": "public/uploads/thweb/cadastros/Cadastro de Natureza de Operacao.mp4" },
         { "label": "Cadastro de Serviço", "url": "public/uploads/thweb/cadastros/Cadastro de Serviço.mp4" },
         { "label": "Cadastro de Caixa", "url": "public/uploads/thweb/cadastros/Cadastro de Caixa.mp4" },
         { "label": "Cadastro de Veículo", "url": "public/uploads/thweb/cadastros/Cadastro de Veículo.mp4" },
@@ -85,7 +85,7 @@
     ],
     "thfood": [
         { "label": "Cadastro de Regra Fiscal", "url": "public/uploads/thweb/cadastros/Cadastro de Regra Fiscal.mp4" },
-        { "label": "Cadastro de Natureza de Operação", "url": "public/uploads/thweb/cadastros/Cadastro de Natureza de Operação.mp4" },
+        { "label": "Cadastro de Natureza de Operação", "url": "public/uploads/thweb/cadastros/Cadastro de Natureza de Operacao.mp4" },
         { "label": "Cadastro de Serviço", "url": "public/uploads/thweb/cadastros/Cadastro de Serviço.mp4" },
         { "label": "Cadastro de Caixa", "url": "public/uploads/thweb/cadastros/Cadastro de Caixa.mp4" },
         { "label": "Cadastro de Veículo", "url": "public/uploads/thweb/cadastros/Cadastro de Veículo.mp4" },
@@ -127,7 +127,7 @@
     ],
     "thshop": [
         { "label": "Cadastro de Regra Fiscal", "url": "public/uploads/thweb/cadastros/Cadastro de Regra Fiscal.mp4" },
-        { "label": "Cadastro de Natureza de Operação", "url": "public/uploads/thweb/cadastros/Cadastro de Natureza de Operação.mp4" },
+        { "label": "Cadastro de Natureza de Operação", "url": "public/uploads/thweb/cadastros/Cadastro de Natureza de Operacao.mp4" },
         { "label": "Cadastro de Serviço", "url": "public/uploads/thweb/cadastros/Cadastro de Serviço.mp4" },
         { "label": "Cadastro de Caixa", "url": "public/uploads/thweb/cadastros/Cadastro de Caixa.mp4" },
         { "label": "Cadastro de Veículo", "url": "public/uploads/thweb/cadastros/Cadastro de Veículo.mp4" },
@@ -169,7 +169,7 @@
     ],
     "thclinicas": [
         { "label": "Cadastro de Regra Fiscal", "url": "public/uploads/thweb/cadastros/Cadastro de Regra Fiscal.mp4" },
-        { "label": "Cadastro de Natureza de Operação", "url": "public/uploads/thweb/cadastros/Cadastro de Natureza de Operação.mp4" },
+        { "label": "Cadastro de Natureza de Operação", "url": "public/uploads/thweb/cadastros/Cadastro de Natureza de Operacao.mp4" },
         { "label": "Cadastro de Serviço", "url": "public/uploads/thweb/cadastros/Cadastro de Serviço.mp4" },
         { "label": "Cadastro de Caixa", "url": "public/uploads/thweb/cadastros/Cadastro de Caixa.mp4" },
         { "label": "Cadastro de Veículo", "url": "public/uploads/thweb/cadastros/Cadastro de Veículo.mp4" },
@@ -211,7 +211,7 @@
     ],
     "thsaloes": [
         { "label": "Cadastro de Regra Fiscal", "url": "public/uploads/thweb/cadastros/Cadastro de Regra Fiscal.mp4" },
-        { "label": "Cadastro de Natureza de Operação", "url": "public/uploads/thweb/cadastros/Cadastro de Natureza de Operação.mp4" },
+        { "label": "Cadastro de Natureza de Operação", "url": "public/uploads/thweb/cadastros/Cadastro de Natureza de Operacao.mp4" },
         { "label": "Cadastro de Serviço", "url": "public/uploads/thweb/cadastros/Cadastro de Serviço.mp4" },
         { "label": "Cadastro de Caixa", "url": "public/uploads/thweb/cadastros/Cadastro de Caixa.mp4" },
         { "label": "Cadastro de Veículo", "url": "public/uploads/thweb/cadastros/Cadastro de Veículo.mp4" },
