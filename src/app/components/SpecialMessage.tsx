@@ -14,7 +14,7 @@ export const SpecialMessage = ({ show, onClick }: Props) => {
                 <button onClick={onClick} className="absolute right-10 top-10" aria-label="Close Message"><BiX className="text-red-600 w-10 h-10" /></button>
                 <div>
                     <h1 className="font-bold text-center text-2xl">Comunicado Especial</h1>
-                    <p className="text-justify my-4 tracking-tight text-lg">Ao encerrarmos mais um ano, queremos expressar nossa profunda gratidão pela confiança depositada em nossa parceria. A jornada que compartilhamos em 2023 foi marcada por valores fundamentais: honestidade e transparência.</p>
+                    <p className="text-justify my-4 tracking-tight text-lg">Ao encerrarmos mais um ano, queremos expressar nossa profunda gratidão pela confiança depositada em nossa parceria. A jornada que compartilhamos em {new Date().getFullYear()} foi marcada por valores fundamentais: honestidade e transparência.</p>
                     <p className="text-justify my-4 tracking-tight text-lg">Agradecemos por escolherem a TH Soluções como sua parceira em Tecnologia da Informação. Que o próximo ano seja repleto de conquistas e inovações, mantendo sempre os alicerces que construímos juntos.</p>
                     <div className="mt-8">
                         <h1 className="font-bold text-lg">Feliz Ano Novo!</h1>
