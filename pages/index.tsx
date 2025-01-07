@@ -42,7 +42,7 @@ const Index = () => {
 
     return (
         <MainLayout typeOfButtonInteraction={1}>
-            <SpecialMessage onClick={() => setShowMessage(false)} show={showMessage} />
+            {/<SpecialMessage onClick={() => setShowMessage(false)} show={showMessage} />/}
             <main className="w-full h-full">
                 <section className="h-screen flex items-center bg-default-blue bg-cover px-4 bg-none lg:bg-default lg:bg-left">
                     <div className="w-full md:container md:mx-auto">
