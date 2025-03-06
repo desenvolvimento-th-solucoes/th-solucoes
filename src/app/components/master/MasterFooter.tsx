@@ -44,7 +44,7 @@ export const MasterFooter = () => {
                 </div>
             </div>
             <div className="w-full bg-default-blue text-white mt-12 flex justify-center items-center px-4 text-center py-2">
-                <p>Copyright © 2023 TH Soluções – Todos os direitos reservados.</p>
+                <p>Copyright © {new Date().getFullYear()} TH Soluções – Todos os direitos reservados.</p>
             </div>
         </footer>
     )

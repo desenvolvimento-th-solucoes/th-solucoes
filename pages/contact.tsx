@@ -195,7 +195,7 @@ const Contact = () => {
                     <div className="container mx-auto flex flex-col gap-12 lg:flex-row">
                         <div className="w-full lg:w-1/2">
                             <div className="mb-12">
-                                <h2 className="text-4xl font-bold">Agradecemos seus comentários!</h2>
+                                <h2 className="text-4xl font-bold">Como podemos te ajudar?</h2>
                             </div>
 
                             <form action="">
