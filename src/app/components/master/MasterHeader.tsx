@@ -15,6 +15,7 @@ import { FaCarrot } from "react-icons/fa6";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { QrCode } from "lucide-react";
 
 export const MasterHeader = ({ enable }: { enable: boolean }) => {
     const authenticationContext = useContext(AuthenticationContext);
@@ -55,6 +56,7 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" href="/erp">TH ERP</Link></li>
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full">
                         <ComboBox label={"TH Sistemas"} >
+                            <ComboOption labelColor="text-white" label={"TH QRCode"} icon={<QrCode className="text-xl" />} href={"https://thqrcode.com.br"} />
                             <ComboOption labelColor="text-white" label={"TH Web"} icon={<BsGlobe className="text-xl" />} href={"/web"} />
                             <ComboOption labelColor="text-white" label={"TH Agro"} icon={<FaCarrot className="text-xl" />} href={"/agribusiness"} />
                             <ComboOption labelColor="text-white" label={"TH Food"} icon={<MdFastfood className="text-xl" />} href={"/food"} />
@@ -62,7 +64,7 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                             <ComboOption labelColor="text-white" label={"TH Shop"} icon={<BiShoppingBag className="text-xl" />} href={"/shop"} />
                             <ComboOption labelColor="text-white" label={"TH Salões"} icon={<BsScissors className="text-xl" />} href={"/hairdressers"} />
                         </ComboBox>
-                    </li>   
+                    </li>
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" href="/support">Painel de Atendimento</Link></li>
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link href="/restrict/login" className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full">Área Restrita</Link></li>
                 </ul>
