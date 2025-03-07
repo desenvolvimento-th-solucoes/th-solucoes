@@ -87,8 +87,8 @@ const Erp = () => {
                 </article>
                 <article className="bg-gradient-to-r from-gray-900 to-gray-700 py-[60px]">
                     <div className="max-w-7xl mx-auto">
-                        <h1 className="text-lg text-blue-500 font-semibold pl-4 xl:p-0">Customizações</h1>
-                        <div className="flex px-4 flex-col xl:flex-row xl:items-center xl:justify-between">
+                        <h1 className="text-lg text-blue-500 font-semibold pl-4 xl:pl-0">Customizações</h1>
+                        <div className="flex px-4 xl:px-0 flex-col xl:flex-row xl:items-center xl:justify-between">
                             <div className="text-white">
                                 <h1 className="font-medium text-xl xl:text-4xl xl:w-[600px]">Podemos criar funcionalidades específicas <strong className="font-bold">para o seu negócio</strong>. </h1>
                                 <p className="mt-2 xl:w-[750px]">Nossa solução fornece funcionalidades customizadas conforme sua demanda, além de possuir os módulos de <strong>estoque, financeiro, vendas, compras, fiscal, produção, serviços, logística e RH.</strong></p>
