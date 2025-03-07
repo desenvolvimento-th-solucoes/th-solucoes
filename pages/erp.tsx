@@ -57,8 +57,8 @@ const Erp = () => {
                 <div className="mx-auto max-w-7xl pt-[120px] xl:pt-0">
                     <article className="px-4 xl:px-0 min-h-screen flex flex-col xl:flex-row xl:items-center justify-between text-white">
                         <div>
-                            <h1 className="font-medium text-4xl w-[600px]">Transforme seu negócio com uma solução empresarial <strong className="font-bold">sob medida</strong>. </h1>
-                            <p className="mt-2 w-[750px]">Nossa solução fornece funcionalidades customizadas conforme sua demanda, além de possuir os módulos de <strong>estoque, financeiro, vendas, compras, fiscal, produção, serviços, logística e RH.</strong></p>
+                            <h1 className="font-medium text-xl xl:text-4xl xl:w-[600px]">Transforme seu negócio com uma solução empresarial <strong className="font-bold">sob medida</strong>. </h1>
+                            <p className="mt-2 xl:w-[750px]">Nossa solução fornece funcionalidades customizadas conforme sua demanda, além de possuir os módulos de <strong>estoque, financeiro, vendas, compras, fiscal, produção, serviços, logística e RH.</strong></p>
                             <Link className="py-2 px-4 rounded-md bg-green-700/80 hover:shadow-xl hover:bg-green-700 transition-all w-max flex items-center gap-2 text-lg font-semibold mt-6" href="https://api.whatsapp.com/send/?phone=5519910005366&text&type=phone_number&app_absent=0">
                                 <FaWhatsapp className="h-8 w-8" />
                                 Solicite um orçamento via WhatsApp
@@ -90,8 +90,8 @@ const Erp = () => {
                         <h1 className="text-lg text-blue-500 font-semibold pl-4 xl:p-0">Customizações</h1>
                         <div className="flex px-4 flex-col xl:flex-row xl:items-center xl:justify-between">
                             <div className="text-white">
-                                <h1 className="font-medium text-4xl w-[600px]">Podemos criar funcionalidades específicas <strong className="font-bold">para o seu negócio</strong>. </h1>
-                                <p className="mt-2 w-[750px]">Nossa solução fornece funcionalidades customizadas conforme sua demanda, além de possuir os módulos de <strong>estoque, financeiro, vendas, compras, fiscal, produção, serviços, logística e RH.</strong></p>
+                                <h1 className="font-medium text-xl xl:text-4xl xl:w-[600px]">Podemos criar funcionalidades específicas <strong className="font-bold">para o seu negócio</strong>. </h1>
+                                <p className="mt-2 xl:w-[750px]">Nossa solução fornece funcionalidades customizadas conforme sua demanda, além de possuir os módulos de <strong>estoque, financeiro, vendas, compras, fiscal, produção, serviços, logística e RH.</strong></p>
                                 <Link className="py-2 px-4 rounded-md text-white bg-green-700 hover:shadow-xl hover:bg-green-700/90 transition-all w-max flex items-center gap-2 text-lg font-semibold mt-6" href="https://api.whatsapp.com/send/?phone=5519910005366&text&type=phone_number&app_absent=0">
                                     <FaWhatsapp className="h-8 w-8" />
                                     Quero receber um orçamento
