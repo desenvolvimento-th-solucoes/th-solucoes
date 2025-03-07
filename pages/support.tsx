@@ -2,9 +2,6 @@ import MainLayout from "@/layouts/App";
 import { ClockArrowUp, FileVideo, MessageCircleQuestion, Siren } from "lucide-react";
 import Link from "next/link";
 
-// suporte: https://thsolucoes.suport.systems/
-// form para abrir chamado
-// 
 const Support = () => {
     return (
         <MainLayout typeOfButtonInteraction={1}>

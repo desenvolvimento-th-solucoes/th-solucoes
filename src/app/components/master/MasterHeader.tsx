@@ -51,8 +51,8 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link href="/services" className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full">Serviços</Link></li>
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link href="/about" className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full">Sobre</Link></li>
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link href="/contact" className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full">Contato</Link></li>
-                    <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" href="https://webmail.thsolucoes.com/">Webmail</Link></li>
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" href="https://lojath.com.br/">Loja</Link></li>
+                    <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" href="/erp">TH ERP</Link></li>
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full">
                         <ComboBox label={"TH Sistemas"} >
                             <ComboOption labelColor="text-white" label={"TH Web"} icon={<BsGlobe className="text-xl" />} href={"/web"} />
