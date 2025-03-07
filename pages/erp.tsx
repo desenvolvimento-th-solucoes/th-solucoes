@@ -54,8 +54,8 @@ const Erp = () => {
     return (
         <MainLayout typeOfButtonInteraction={1}>
             <section className="bg-gradient-to-r from-blue-900 to-cyan-500">
-                <div className="mx-auto max-w-7xl">
-                    <article className="h-screen flex flex-col xl:flex-row items-center justify-between text-white">
+                <div className="mx-auto max-w-7xl pt-[120px] xl:pt-0">
+                    <article className="px-4 xl:px-0 min-h-screen flex flex-col xl:flex-row xl:items-center justify-between text-white">
                         <div>
                             <h1 className="font-medium text-4xl w-[600px]">Transforme seu negócio com uma solução empresarial <strong className="font-bold">sob medida</strong>. </h1>
                             <p className="mt-2 w-[750px]">Nossa solução fornece funcionalidades customizadas conforme sua demanda, além de possuir os módulos de <strong>estoque, financeiro, vendas, compras, fiscal, produção, serviços, logística e RH.</strong></p>
@@ -64,12 +64,12 @@ const Erp = () => {
                                 Solicite um orçamento via WhatsApp
                             </Link>
                         </div>
-                        <Image className="filter contrast-200" src="/assets/images/integration.webp" alt="" width={400} height={300} />
+                        <Image className="filter contrast-200 mt-12 xl:mt-0" src="/assets/images/integration.webp" alt="" width={400} height={300} />
                     </article>
                 </div>
-                <article className="bg-gradient-to-r from-gray-300 to-gray-50 py-[60px]">
+                <article className="px-4 bg-gradient-to-r from-gray-300 to-gray-50 py-[60px]">
                     <h1 className="text-default-blue text-4xl font-semibold text-center mb-10">Módulos Dedicados</h1>
-                    <div className="mx-auto max-w-7xl grid grid-cols-4 gap-6">
+                    <div className="mx-auto max-w-7xl grid-cols-1 md:grid-cols-2 grid xl:grid-cols-4 gap-6">
                         {dedicatedModules.map((module, index) => (
                             <div key={index} className="w-full h-full bg-gray-50 p-4 border border-gray-400" style={{ boxShadow: "8px 8px 0px 0px #01588e" }}>
                                 {module.icon}
@@ -87,8 +87,8 @@ const Erp = () => {
                 </article>
                 <article className="bg-gradient-to-r from-gray-900 to-gray-700 py-[60px]">
                     <div className="max-w-7xl mx-auto">
-                        <h1 className="text-lg text-blue-500 font-semibold">Customizações</h1>
-                        <div className="flex items-center justify-between">
+                        <h1 className="text-lg text-blue-500 font-semibold pl-4 xl:p-0">Customizações</h1>
+                        <div className="flex px-4 flex-col xl:flex-row xl:items-center xl:justify-between">
                             <div className="text-white">
                                 <h1 className="font-medium text-4xl w-[600px]">Podemos criar funcionalidades específicas <strong className="font-bold">para o seu negócio</strong>. </h1>
                                 <p className="mt-2 w-[750px]">Nossa solução fornece funcionalidades customizadas conforme sua demanda, além de possuir os módulos de <strong>estoque, financeiro, vendas, compras, fiscal, produção, serviços, logística e RH.</strong></p>
@@ -97,9 +97,9 @@ const Erp = () => {
                                     Quero receber um orçamento
                                 </Link>
                             </div>
-                            <div>
+                            <div className="pt-12 w-full">
                                 <div className="bg-white rounded-md w-full h-8 mb-4"></div>
-                                <div className="rounded-xl bg-white p-4 w-[500px] h-[300px] flex gap-4 shadow-xl">
+                                <div className="rounded-xl bg-white p-4 w-full xl:w-[500px] h-[300px] flex gap-4 shadow-xl">
                                     <div className="bg-default-blue w-8 rounded-lg h-full"></div>
                                     <div className="flex flex-col gap-4 w-full">
                                         <div className="bg-black/80 w-full rounded-lg h-8"></div>
