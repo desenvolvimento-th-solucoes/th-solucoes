@@ -15,7 +15,7 @@ import Image from "next/image";
 
 const Services = () => {
     return (
-        <MainLayout  typeOfButtonInteraction={1}>
+        <MainLayout typeOfButtonInteraction={1}>
             <main className="w-full h-full">
                 <section className="h-screen flex items-center bg-services bg-no-repeat bg-cover bg-center">
                     <div>
@@ -140,6 +140,71 @@ const Services = () => {
                         <div className="md:w-full relative lg:w-1/2">
                             <div className="w-full h-full absolute hover:bg-default-black/50 transition-all cursor-pointer z-20"></div>
                             <img src="/assets/images/services-image.jpg" alt="Futuristic Computer" className="h-full object-cover" />
+                        </div>
+                    </div>
+                </section>
+                <section className="bg-white pt-12 pb-24 px-4">
+                    <div className="container mx-auto h-max text-default-black flex flex-col justify-between gap-12 lg:flex-row">
+                        <div className="w-full lg:w-1/2">
+                            <h1 className="text-2xl font-semibold mb-4 lg:text-4xl">E-mail Corporativo</h1>
+                            <p className="text-justify text-md font-extralight lg:text-lg">
+                                Além de passar uma imagem mais profissional para os clientes, o Email Corporativo oferece mais segurança e confiabilidade, comparado à utilização de e-mails pessoais, uma vez que você pode organizar os emails da empresa por setor, ao invés de toda a equipe acessar a mesma caixa de e-mail.
+                            </p>
+                            <ul className="mt-10">
+                                <li className="flex items-center mb-6">
+                                    <div className="mr-2">
+                                        <BsCheck className="text-default-blue text-5xl" />
+                                    </div>
+                                    <p className="font-extralight text-justify text-md lg:text-lg">
+                                        <strong className="font-bold">AntiSpam / Antivírus:</strong> Para que os colaboradores não percam tempo limpando SPAM, temos mecanismos para garantir a sua segurança digital, assim sua rede fica segura contra ameaças digitais.</p>
+                                </li>
+                                <li className="flex items-center mb-6">
+                                    <div className="mr-2">
+                                        <BsCheck className="text-default-blue text-5xl" />
+                                    </div>
+                                    <p className="font-extralight text-justify text-md lg:text-lg">
+                                        <strong className="font-bold">Compatibilidade e Integração:</strong> Temos integração com Outlook, Mac Mail, Thunderbird, Iphone e Ipad, Android e Gmail e Webmail.</p>
+                                </li>
+                                <li className="flex items-center mb-6">
+                                    <div className="mr-2">
+                                        <BsCheck className="text-default-blue text-5xl" />
+                                    </div>
+                                    <p className="font-extralight text-justify text-md lg:text-lg">
+                                        <strong className="font-bold">Protocolos e Clientes:</strong> POP3, IMAP, SMTP e ActiveSync.</p>
+                                </li>
+                                <li className="flex items-center mb-6">
+                                    <div className="mr-2">
+                                        <BsCheck className="text-default-blue text-5xl" />
+                                    </div>
+                                    <p className="font-extralight text-justify text-md lg:text-lg">
+                                        <strong className="font-bold">Compliance com a LGPD:</strong> Recursos de Logs de Acesso, controle de Horário de Acesso, AntiSpam e Auditoria de E-mails.</p>
+                                </li>
+                                <li className="flex items-center mb-6">
+                                    <div className="mr-2">
+                                        <BsCheck className="text-default-blue text-5xl" />
+                                    </div>
+                                    <p className="font-extralight text-justify text-md lg:text-lg">
+                                        <strong className="font-bold">Gerência de E-mail:</strong> O gestor pode verificar se houve algum desvio de conduta de colaborador, como também optar por encaminhar os e-mails e contatos de uma conta para a conta de outro funcionário.</p>
+                                </li>
+                                <li className="flex items-center mb-6">
+                                    <div className="mr-2">
+                                        <BsCheck className="text-default-blue text-5xl" />
+                                    </div>
+                                    <p className="font-extralight text-justify text-md lg:text-lg">
+                                        <strong className="font-bold">Migração de E-mails:</strong> Auxiliamos e ajudamos em todo o processo de migração de uma plataforma existente para outra, de forma simples e rápida.</p>
+                                </li>
+                                <li className="flex items-center mb-6">
+                                    <div className="mr-2">
+                                        <BsCheck className="text-default-blue text-5xl" />
+                                    </div>
+                                    <p className="font-extralight text-justify text-md lg:text-lg">
+                                        <strong className="font-bold">Controle de Horários:</strong> Elimine o acesso em horários fora do expediente e defina o acesso restrito à conta de e-mail.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="md:w-full relative lg:w-1/2">
+                            <div className="w-full h-full absolute hover:bg-default-black/50 transition-all cursor-pointer z-20"></div>
+                            <img src="/assets/images/webmail.png" alt="Futuristic Computer" className="h-full object-cover object-left" />
                         </div>
                     </div>
                 </section>
