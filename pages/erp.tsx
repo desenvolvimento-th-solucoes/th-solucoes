@@ -5,49 +5,81 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { PaintBucket } from "lucide-react";
 import { BsCashStack } from "react-icons/bs";
 import { AiOutlineBarChart } from "react-icons/ai";
-import { FaFileInvoiceDollar, FaBoxes, FaStore, FaChartLine, FaUsers, FaIndustry } from "react-icons/fa";
+import { FaFileInvoiceDollar, FaBoxes, FaStore, FaChartLine, FaUsers, FaIndustry, FaTools, FaTshirt, FaPlane, FaAppleAlt, FaWrench, FaHamburger, FaCogs, FaBuilding, FaClipboardList, FaStoreAlt, FaPlug, FaPhone, FaHospital, FaTv, FaBroom, FaTruck, FaGlassCheers } from "react-icons/fa";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion";
+import { GiChemicalDrop } from "react-icons/gi";
+import PricingSection from "@/erp/pricing-section";
 
 const dedicatedModules = [
     {
         icon: <BsCashStack className="h-10 w-10 text-default-blue" />,
-        title: "Gestão Financeira Inteligente",
-        description: "Gerencie <strong>boletos, cobranças, receitas e despesas</strong> em uma plataforma totalmente integrada. Controle seu fluxo de caixa com <strong>praticidade</strong>, onde e quando quiser."
+        title: "Gestão Financeira",
+        description: <p>Gerencie <strong>boletos, cobranças, receitas e despesas</strong> em uma plataforma totalmente integrada. Controle seu fluxo de caixa com <strong>praticidade</strong>, onde e quando quiser.</p>
     },
     {
         icon: <FaFileInvoiceDollar className="h-10 w-10 text-default-blue" />,
         title: "Módulo Fiscal Completo",
-        description: "Emita e gerencie todos os seus <strong>documentos fiscais</strong> em um só lugar, com rapidez e facilidade. Gere <strong>NFe, NFCe, CTe, MDFe, SPED Fiscal</strong> e extraia XMLs de todas as notas emitidas sem complicação."
+        description: <p>Emita e gerencie todos os seus <strong>documentos fiscais</strong> em um só lugar, com rapidez e facilidade. Gere <strong>NFe, NFCe, CTe, MDFe, SPED Fiscal</strong> e extraia XMLs de todas as notas emitidas sem complicação.</p>
     },
     {
         icon: <FaBoxes className="h-10 w-10 text-default-blue" />,
         title: "Gestão de Estoque Eficiente",
-        description: "Controle <strong>múltiplos depósitos</strong>, gerencie compras de insumos e mercadorias por <strong>lote, validade ou número de série</strong>. Utilize funcionalidades avançadas como <strong>cotações online</strong> e cadastro automático via nota de entrada."
+        description: <p>Controle <strong>múltiplos depósitos</strong>, gerencie compras de insumos e mercadorias por <strong>lote, validade ou número de série</strong>. Utilize funcionalidades avançadas como <strong>cotações online</strong> e cadastro automático via nota de entrada.</p>
     },
     {
         icon: <FaStore className="h-10 w-10 text-default-blue" />,
         title: "Frente de Caixa Integrada",
-        description: "Registre <strong>vendas</strong>, emita <strong>NFC-e e CF-e SAT</strong> e tenha integração total com <strong>financeiro e estoque</strong>. Compatível com <strong>leitores de código de barras</strong> e <strong>impressoras não fiscais</strong>, disponível para uso online e offline."
+        description: <p>Registre <strong>vendas</strong>, emita <strong>NFC-e e CF-e SAT</strong> e tenha integração total com <strong>financeiro e estoque</strong>. Compatível com <strong>leitores de código de barras</strong> e <strong>impressoras não fiscais</strong>, disponível para uso online e offline.</p>
     },
     {
         icon: <FaChartLine className="h-10 w-10 text-default-blue" />,
         title: "Central de Integrações",
-        description: "Conecte seu sistema a <strong>múltiplas lojas</strong> em diversas plataformas. Gerencie <strong>operações, estoques, vendas, emissão de notas, pagamentos e entregas</strong> de forma centralizada e eficiente."
+        description: <p>Conecte seu sistema a <strong>múltiplas lojas</strong> em diversas plataformas. Gerencie <strong>operações, estoques, vendas, emissão de notas, pagamentos e entregas</strong> de forma centralizada e eficiente.</p>
     },
     {
         icon: <AiOutlineBarChart className="h-10 w-10 text-default-blue" />,
         title: "Relatórios",
-        description: "Acompanhe sua empresa de ponta a ponta, com <strong>relatórios financeiros, de lucratividade, de vendas, de estoque e fiscais</strong> para ajudar na tomada de decisões. E se precisar, você ainda pode <strong>personalizar relatórios específicos</strong> para o seu negócio!"
+        description: <p>Acompanhe sua empresa de ponta a ponta, com <strong>relatórios financeiros, de lucratividade, de vendas, de estoque e fiscais</strong> para ajudar na tomada de decisões. E se precisar, você ainda pode <strong>personalizar relatórios específicos</strong> para o seu negócio!</p>
     },
     {
         icon: <FaUsers className="h-10 w-10 text-default-blue" />,
         title: "CRM e Força de Vendas",
-        description: "Visualize <strong>indicadores essenciais</strong> de oportunidades, campanhas e desempenho da equipe de vendas. Utilize <strong>gráficos dinâmicos</strong> para monitorar ações, agendamentos e resultados diários."
+        description: <p>Visualize <strong>indicadores essenciais</strong> de oportunidades, campanhas e desempenho da equipe de vendas. Utilize <strong>gráficos dinâmicos</strong> para monitorar ações, agendamentos e resultados diários.</p>
     },
     {
         icon: <FaIndustry className="h-10 w-10 text-default-blue" />,
-        title: "Gestão de Produção (PCP) Moderna",
-        description: "Uma solução intuitiva para <strong>indústrias de qualquer porte</strong>. Gerencie <strong>ordens de produção</strong>, simule processos e atenda às exigências fiscais, incluindo <strong>Bloco K e H do SPED Fiscal</strong>."
+        title: "Gestão de Produção (PCP)",
+        description: <p>Uma solução intuitiva para <strong>indústrias de qualquer porte</strong>. Gerencie <strong>ordens de produção</strong>, simule processos e atenda às exigências fiscais, incluindo <strong>Bloco K e H do SPED Fiscal</strong>.</p>
     }
+];
+
+const segments = [
+    { icon: <FaTools className="h-10 w-10 text-default-blue animate-none" />, title: "Assistência Técnica", contains: ["Ordem de Serviço", "Controle de Equipamentos", "Gestão de Clientes", "Emissão de Notas Fiscais"] },
+    { icon: <FaTshirt className="h-10 w-10 text-default-blue animate-none" />, title: "Vestuário", contains: ["Gestão de Estoque", "Emissão de Notas Fiscais", "Controle de Lotes", "Gestão de Vendas"] },
+    { icon: <FaPlane className="h-10 w-10 text-default-blue animate-none" />, title: "Agências de turismo", contains: ["Gestão de Vendas", "Emissão de NFS-e", "Cadastro de Pacotes", "Controle de Reservas"] },
+    { icon: <FaAppleAlt className="h-10 w-10 text-default-blue animate-none" />, title: "Produtos Alimentícios", contains: ["Gestão de Estoque", "Controle de Validade", "Cadastro de Fornecedores", "Gestão de Compras"] },
+    { icon: <FaWrench className="h-10 w-10 text-default-blue animate-none" />, title: "Autopeças", contains: ["Ordem de Produção", "Gestão de Estoque", "Cadastro de Fornecedores", "Controle de Qualidade"] },
+    { icon: <FaHamburger className="h-10 w-10 text-default-blue animate-none" />, title: "Lanchonetes e Bares", contains: ["Gestão de Vendas", "Controle de Estoque", "Gestão de Cardápio", "Atendimento ao Cliente"] },
+    { icon: <FaCogs className="h-10 w-10 text-default-blue animate-none" />, title: "Serviços de Engenharia", contains: ["Gestão de Projetos", "Emissão de NFS-e", "Controle de Materiais", "Planejamento de Obras"] },
+    { icon: <FaBuilding className="h-10 w-10 text-default-blue animate-none" />, title: "Construção", contains: ["Gestão de Obras", "Controle de Materiais", "Acompanhamento de Andamento", "Gestão de Equipes"] },
+    { icon: <FaClipboardList className="h-10 w-10 text-default-blue animate-none" />, title: "Consultoria Empresarial", contains: ["Gestão de Serviços", "Emissão de NFS-e", "Planejamento Estratégico", "Análise de Mercado"] },
+    { icon: <FaStoreAlt className="h-10 w-10 text-default-blue animate-none" />, title: "Loja Virtual", contains: ["Integração com Marketplaces", "Gestão de Pedidos", "Gestão de Produtos", "Análise de Vendas"] },
+    { icon: <GiChemicalDrop className="h-10 w-10 text-default-blue animate-none" />, title: "Cosméticos e Perfumes", contains: ["Gestão de Estoque", "Controle de Lotes", "Cadastro de Fornecedores", "Gestão de Vendas"] },
+    { icon: <FaPlug className="h-10 w-10 text-default-blue animate-none" />, title: "Serviços Elétricos", contains: ["Ordem de Serviço", "Gestão de Equipamentos", "Controle de Materiais", "Atendimento ao Cliente"] },
+    { icon: <FaTshirt className="h-10 w-10 text-default-blue animate-none" />, title: "Confecção de Roupas", contains: ["Gestão de Produção", "Controle de Qualidade", "Cadastro de Modelos", "Gestão de Vendas"] },
+    { icon: <FaTools className="h-10 w-10 text-default-blue animate-none" />, title: "Ferramentas e Ferragens", contains: ["Gestão de Estoque", "Controle de Fornecedores", "Gestão de Compras", "Análise de Vendas"] },
+    { icon: <FaPhone className="h-10 w-10 text-default-blue animate-none" />, title: "Telefonia e Comunicação", contains: ["Gestão de Vendas", "Suporte Técnico", "Cadastro de Planos", "Atendimento ao Cliente"] },
+    { icon: <FaHospital className="h-10 w-10 text-default-blue animate-none" />, title: "Produtos Hospitalares", contains: ["Gestão de Estoque", "Controle de Validade", "Cadastro de Fornecedores", "Gestão de Compras"] },
+    { icon: <FaTv className="h-10 w-10 text-default-blue animate-none" />, title: "Eletro-domésticos", contains: ["Gestão de Vendas", "Assistência Técnica", "Cadastro de Produtos", "Controle de Garantias"] },
+    { icon: <FaCogs className="h-10 w-10 text-default-blue animate-none" />, title: "Venda de Móveis", contains: ["Gestão de Estoque", "Gestão de Vendas", "Cadastro de Modelos", "Atendimento ao Cliente"] },
+    { icon: <FaIndustry className="h-10 w-10 text-default-blue animate-none" />, title: "Indústrias", contains: ["Gestão de Produção", "Controle de Qualidade", "Gestão de Estoque", "Planejamento de Produção"] },
+    { icon: <FaBroom className="h-10 w-10 text-default-blue animate-none" />, title: "Produtos de Limpeza", contains: ["Gestão de Estoque", "Gestão de Vendas", "Cadastro de Fornecedores", "Controle de Qualidade"] },
+    { icon: <FaTruck className="h-10 w-10 text-default-blue animate-none" />, title: "Distribuidoras", contains: ["Gestão de Estoque", "Gestão de Compras", "Cadastro de Fornecedores", "Logística de Distribuição"] }
 ];
 
 const Erp = () => {
@@ -74,7 +106,7 @@ const Erp = () => {
                             <div key={index} className="w-full h-full bg-gray-50 p-4 border border-gray-400" style={{ boxShadow: "8px 8px 0px 0px #01588e" }}>
                                 {module.icon}
                                 <h2 className="font-bold text-default-blue text-xl my-3">{module.title}</h2>
-                                <p className="text-gray-600" dangerouslySetInnerHTML={{ __html: module.description }}></p>
+                                {module.description}
                             </div>
                         ))}
                     </div>
@@ -119,6 +151,52 @@ const Erp = () => {
                                 <div className="bg-black/80 rounded-md w-full h-8 mt-4"></div>
                             </div>
                         </div>
+                    </div>
+                </article>
+                <article className="px-4 py-[60px]">
+                    <h1 className="text-white text-4xl font-semibold text-center mb-10">Segmentos em que atuamos</h1>
+                    <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3">
+                        {segments.map((module, index) => (
+                            <Accordion className="p-4" key={index} type="single" collapsible>
+                                <AccordionItem className="bg-white rounded-md" value="item-1">
+                                    <AccordionTrigger className="flex items-center gap-2 p-4">
+                                        {module.icon}
+                                        {module.title}
+                                    </AccordionTrigger>
+                                    <AccordionContent className="p-4">
+                                        <ul>
+                                            {module.contains.map((submodule, i) => {
+                                                return (
+                                                    <li className="list-disc ml-4" key={i}>{submodule}</li>
+                                                )
+                                            })}
+                                        </ul>
+                                    </AccordionContent>
+                                </AccordionItem>
+                            </Accordion>
+                        ))}
+                    </div>
+                    <div className="flex justify-center w-full mt-8">
+                        <Link className="py-2 px-4 rounded-md text-white bg-green-700 hover:shadow-xl hover:bg-green-700/90 transition-all w-max flex items-center gap-2 text-lg font-semibold mt-6" href="https://api.whatsapp.com/send/?phone=5519910005366&text&type=phone_number&app_absent=0">
+                            <FaWhatsapp className="h-8 w-8" />
+                            Quero receber um orçamento
+                        </Link>
+                    </div>
+                </article>
+                <article className="px-4 bg-gradient-to-r from-gray-300 to-gray-50 py-[60px]">
+                    <div className="max-w-7xl mx-auto">
+                        <h1 className="text-lg font-semibold pl-4 xl:pl-0">Nossos Planos</h1>
+                        <div className="flex px-4 xl:px-0 flex-col xl:flex-row xl:items-center">
+                            <div className="text-black">
+                                <h1 className="font-medium text-xl xl:text-4xl xl:w-[600px]">Podemos montar um plano para o seu negócio <strong className="font-bold">como quiser</strong>. </h1>
+                                <p className="mt-2 xl:w-[750px]">Basta nos mostrar quais os módulos desejados e, caso não possua algo adequado para suas necessidades, podemos criar as funcionalidades específicas customizadas.</p>
+                                <Link className="py-2 px-4 rounded-md text-white bg-green-700 hover:shadow-xl hover:bg-green-700/90 transition-all w-max flex items-center gap-2 text-lg font-semibold mt-6" href="https://api.whatsapp.com/send/?phone=5519910005366&text&type=phone_number&app_absent=0">
+                                    <FaWhatsapp className="h-8 w-8" />
+                                    Quero receber um orçamento
+                                </Link>
+                            </div>
+                        </div>
+                        <PricingSection />
                     </div>
                 </article>
             </section>
