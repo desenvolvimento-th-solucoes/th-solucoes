@@ -17,12 +17,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             password: req.body.password
         })
     })
-    
+
     if (!request.ok) {
         return res.status(500).json({ error: "backend error" })
     }
     const setCookie = request.headers.get('set-cookie');
-    console.log(setCookie)
     if (setCookie) {
         res.setHeader('set-cookie', setCookie);
     }

@@ -13,15 +13,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         credentials: "include",
         method: "GET",
     })
-    console.log("Destroy: " + request.json())
     if (!request.ok) {
-        return res.status(500).json({ error: "backend error" })
+        return res.status(500).json({ error: "destroy session error" })
     }
-    const setCookie = request.headers.get('set-cookie');
-    console.log(setCookie)
-    if (setCookie) {
-        res.setHeader('set-cookie', setCookie);
-    }
+    res.setHeader('Set-Cookie', [
+        `session=; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=0`,
+    ]);
     const response = await request.json()
     return res.status(request.status).json(response)
 }
