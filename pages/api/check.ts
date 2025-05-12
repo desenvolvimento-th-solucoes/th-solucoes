@@ -5,6 +5,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const headers: HeadersInit = {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Credentials": "true",
         ...(cookies ? { "Cookie": cookies } : {})
     };
 
