@@ -10,10 +10,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     try {
         const request = await instance.get(`/check`)
         const response = await request.data;
-        console.log("Request: " + request)
-        console.log("Response: " + response)
         return res.status(request.status).json(response)
     } catch (error) {
-        return res.status(502).json({error: "backend error"})
+        console.log(error)
+        return res.status(502).json(error)
     }
 }
