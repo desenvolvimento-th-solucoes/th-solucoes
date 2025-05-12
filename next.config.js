@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    env: {
+        SERVICE_URL: process.env.SERVICE_URL
+    }
     // images: {
     //     remotePatterns: [
     //         {

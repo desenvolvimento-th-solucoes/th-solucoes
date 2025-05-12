@@ -72,6 +72,7 @@ export const MobileMenu = ({ show, onClick, handleShowMore, showMore }: Props) =
                 {authenticationContext?.localStorageData.loggedUser && authenticationContext.localStorageData.isLogged && (
                     <>
                         <li className="group text-md font-medium transition-all w-full"><Link className="group-hover:text-white flex justify-center py-4 items-center hover:bg-default-blue w-full active:bg-default-blue" href="/learning">Treinamentos</Link></li>
+                        <li className="group text-md font-medium transition-all w-full"><Link className="group-hover:text-white flex justify-center py-4 items-center hover:bg-default-blue w-full active:bg-default-blue" href="http://191.6.5.86:3000/login">Monitoramento</Link></li>
                         <li className="group text-md font-medium transition-all w-full"><Link href="/" className="group-hover:text-white flex text-red-700 justify-center py-4 items-center hover:bg-red-700 w-full active:bg-red-700" onClick={() => handleAskLogout()}>Sair</Link></li>
                     </>
                 )}
