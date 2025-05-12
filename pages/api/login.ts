@@ -17,6 +17,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             password: req.body.password
         })
     })
+    
     if (!request.ok) {
         return res.status(500).json({ error: "backend error" })
     }
