@@ -7,7 +7,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         method: "GET"
     })
     if (!request.ok) {
-        console.log(request)
         return res.status(500).json({ error: "backend error" })
     }
     const response = await request.json()
