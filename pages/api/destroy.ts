@@ -13,7 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         credentials: "include",
         method: "GET",
     })
-    console.log("Destroy: " + request)
+    console.log("Destroy: " + request.json())
     if (!request.ok) {
         return res.status(500).json({ error: "backend error" })
     }
