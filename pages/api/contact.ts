@@ -5,6 +5,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         headers: {
             "Content-Type": "application/json"
         },
+        credentials: "include",
         method: "POST",
         body: JSON.stringify({
             name: req.body.name,

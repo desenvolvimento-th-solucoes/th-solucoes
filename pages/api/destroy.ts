@@ -2,7 +2,11 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const request = await fetch(`${process.env.SERVICE_URL}/destroy`, {
-        method: "GET"
+        headers: {
+            "Content-Type": "application/json"
+        },
+        credentials: "include",
+        method: "GET",
     })
     if (!request.ok) {
         return res.status(500).json({ error: "backend error" })

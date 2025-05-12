@@ -2,7 +2,11 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const request = await fetch(`${process.env.SERVICE_URL}/check`, {
-        method: "GET"
+        headers: {
+            "Content-Type": "application/json"
+        },
+        method: "GET",
+        credentials: "include",
     })
     if (!request.ok) {
         console.log(request);
