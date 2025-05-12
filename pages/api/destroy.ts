@@ -11,10 +11,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         method: "GET",
         headers: headers
     })
-    if (!request.ok) {
-        console.log(await request.json())
-        return res.status(500).json({ error: "destroy session error" })
-    }
     res.setHeader('Set-Cookie', [
         `session=; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=0`,
     ]);
