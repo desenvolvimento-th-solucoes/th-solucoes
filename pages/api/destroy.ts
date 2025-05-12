@@ -1,17 +1,15 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-    const cookies = req.headers.cookie;
-
     const headers: HeadersInit = {
         "Content-Type": "application/json",
         "Access-Control-Allow-Credentials": "true",
-        ...(cookies ? { "Cookie": cookies } : {})
     };
 
     const request = await fetch(`${process.env.SERVICE_URL}/destroy`, {
         credentials: "include",
         method: "GET",
+        headers: headers
     })
     if (!request.ok) {
         return res.status(500).json({ error: "destroy session error" })
