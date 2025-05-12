@@ -7,13 +7,13 @@ const instance = axios.create({
 })
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-    const request = await instance.get(`${process.env.SERVICE_URL}/check`)
-    if (request.status !== 200) {
-        console.log(request);
+    try {
+        const request = await instance.get(`${process.env.SERVICE_URL}/check`)
+        const response = await request.data;
+        return res.status(request.status).json(response)
+    } catch (error) {
         return res.status(500).json({ error: "backend error" })
     }
-    const response = await request.data;
-    return res.status(request.status).json(response)
 }
 
 export const config = {
