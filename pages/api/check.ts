@@ -13,6 +13,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         return res.status(request.status).json(response)
     } catch (error) {
         console.log(error)
-        return res.status(502).json(error)
+        return res.status(500).json({error: error})
     }
 }
