@@ -1,19 +1,23 @@
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+    const cookies = req.headers.cookie;
+
     const headers: HeadersInit = {
         "Content-Type": "application/json",
         "Access-Control-Allow-Credentials": "true",
+        ...(cookies ? { "Cookie": cookies } : {})
     };
 
     const request = await fetch(`${process.env.SERVICE_URL}/destroy`, {
-        credentials: "include",
+        headers: headers,
         method: "GET",
-        headers: headers
+        credentials: "include",
     })
-    res.setHeader('Set-Cookie', [
-        `session=; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=0`,
-    ]);
+
+    if (!request.ok) {
+        return res.status(500).json({ error: "backend error" })
+    }
     const response = await request.json()
     return res.status(request.status).json(response)
 }
