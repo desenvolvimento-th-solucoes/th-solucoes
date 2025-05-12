@@ -12,6 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         headers: headers
     })
     if (!request.ok) {
+        console.log(request.json())
         return res.status(500).json({ error: "destroy session error" })
     }
     res.setHeader('Set-Cookie', [
