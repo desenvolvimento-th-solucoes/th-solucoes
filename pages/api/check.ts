@@ -1,14 +1,14 @@
 import axios from "axios";
 import { NextApiRequest, NextApiResponse } from "next";
 
-const instance = axios.create({
+export const instance = axios.create({
     baseURL: process.env.SERVICE_URL,
     withCredentials: true
 })
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     try {
-        const request = await instance.get(`${process.env.SERVICE_URL}/check`)
+        const request = await instance.get(`/check`)
         const response = await request.data;
         console.log("Request: " + request)
         console.log("Response: " + response)
