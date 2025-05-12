@@ -9,7 +9,7 @@ import { Warning } from "../../src/app/components/Warning";
 import { AiFillWarning } from "react-icons/ai";
 import { ModalType } from "../../src/app/types/ModalType";
 import { Modal } from "../../src/app/components/Modal";
-import { api } from "../../src/app/api/api";
+import { api } from "../../src/app/axios/api";
 import { ButtonDefault } from "../../src/app/components/button/ButtonDefault";
 import { BsArrowRepeat, BsCheckLg } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";

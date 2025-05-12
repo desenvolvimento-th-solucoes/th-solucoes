@@ -14,7 +14,7 @@ import { PiPaperPlaneRight } from "react-icons/pi";
 import { validator } from "@/app/features/validator";
 import '../src/app/globals.css';
 import MainLayout from "@/layouts/App";
-import { api } from "@/app/api/api";
+import { api } from "@/app/axios/api";
 import { Warning } from "@/app/components/Warning";
 import { Modal } from "@/app/components/Modal";
 import { ModalType } from "@/app/types/ModalType";

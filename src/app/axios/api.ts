@@ -5,7 +5,7 @@ import { Message } from "../types/Message";
 import { Save } from "../types/Save";
 
 const instance = axios.create({
-    baseURL: "https://api.thsolucoes.com/public/api",
+    baseURL: "/api",
     withCredentials: true
 });
 
@@ -20,7 +20,6 @@ export const api = {
             const response = await request.data;
             return response;
         } catch (error) {
-            console.error(error);
         }
     },
     register: async (data: Register) => {
@@ -29,7 +28,6 @@ export const api = {
             const response = await request.data;
             return response;
         } catch (error) {
-            console.error(error);
         }
     },
     login: async (credentials: Login) => {
@@ -38,8 +36,6 @@ export const api = {
             const response = await request.data;
             return response;
         } catch (error) {
-            console.error("Erro na Solicitação!");
-            console.error(error);
         }
     },
     check: async () => {
@@ -48,7 +44,6 @@ export const api = {
             const response = await request.data;
             return response;
         } catch (error) {
-            console.error(error);
         }
     },
     destroy: async () => {
@@ -58,7 +53,6 @@ export const api = {
             localStorage.removeItem("logged_user");
             return response;
         } catch (error) {
-            console.error(error);
         }
     },
     save: async (id: number, informations: Save) => {
@@ -70,7 +64,6 @@ export const api = {
             const response = await request.data;
             return response;
         } catch (error) {
-            console.error(error);
         }
     },
     redefine: async (id: number, password: string) => {
@@ -82,7 +75,6 @@ export const api = {
             const response = await request.data;
             return response;
         } catch (error) {
-            console.error(error);
         }
     }
 }

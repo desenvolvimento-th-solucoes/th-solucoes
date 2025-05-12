@@ -15,7 +15,7 @@ import { FaCarrot } from "react-icons/fa6";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import { QrCode } from "lucide-react";
+import { QrCode, Radar } from "lucide-react";
 
 export const MasterHeader = ({ enable }: { enable: boolean }) => {
     const authenticationContext = useContext(AuthenticationContext);
@@ -38,10 +38,6 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
 
     const openMenu = () => setShowMenu(true);
     const closeMenu = () => setShowMenu(false);
-
-    React.useEffect(() => {
-        console.log(navigate.pathname)
-    })
 
     return (
         <header className={`${!enable && navigate.pathname !== "/clinicals" && navigate.pathname !== "/learning" && "bg-transparent h-20"} ${!enable && (navigate.pathname === "/clinicals" || navigate.pathname === "/learning") && "h-20 shadow-gray-800 shadow-lg bg-default-black"} ${enable && "h-24 shadow-gray-800 shadow-lg bg-default-black"} duration-slow z-40 transition-all w-screen text-white flex justify-center fixed`}>
@@ -86,6 +82,7 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                         <div className={`hidden ${!hidden && "xl:flex"} gap-4 h-full lg:items-center lg:justify-center`}>
                             <ComboBox label={`Olá, ${features.toCapitalize(authenticationContext.localStorageData.loggedUser.name)}`} icon={<HiOutlineUserCircle className="text-white text-2xl" />}>
                                 <ComboOption labelColor="text-white" label={"Treinamentos"} icon={<MdAdminPanelSettings className="text-xl" />} href={"/learning"} />
+                                <ComboOption labelColor="text-white" label={"Monitoramento"} icon={<Radar className="text-xl" />} href={"http://191.6.5.86:3000/login"} />
                                 {/* <ComboOption labelColor="text-white" label={"Conta"} icon={<MdOutlineManageAccounts className="text-xl" />} href={"/account")} > */}
                                 <ComboOption onClick={handleAskLogout} href="/" labelColor="text-red-700 font-semibold" label={"Sair"} icon={<BiPowerOff className="text-red-700 text-xl" />} />
                             </ComboBox>

@@ -1,7 +1,7 @@
 "use client";
 
 import MainLayout from "@/layouts/App";
-import { api } from "@/app/api/api";
+import { api } from "@/app/axios/api";
 import { Input } from "@/app/components/Input";
 import { RequireAuthentication } from "@/app/components/RequireAuthentication";
 import { ButtonDefault } from "@/app/components/button/ButtonDefault";
