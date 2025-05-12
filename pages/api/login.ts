@@ -1,25 +1,17 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { instance } from "./check";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-    const request = await fetch(`${process.env.SERVICE_URL}/login`, {
-        headers: {
-            "Content-Type": "application/json"
-        },
-        method: "POST",
-        body: JSON.stringify({
-            email: req.body.email,
-            password: req.body.password
+    try {
+        const request = await instance.post(`/login`, {
+            body: {
+                email: req.body.email,
+                password: req.body.password
+            }
         })
-    })
-    if (!request.ok) {
-        return res.status(500).json({ error: "backend error" })
+        const response = await request.data;
+        return res.status(request.status).json(response);
+    } catch (error) {
+        return res.status(502).json(error)
     }
-    const response = await request.json()
-    return res.status(request.status).json(response)
 }
-
-export const config = {
-    api: {
-        bodyParser: true,
-    },
-};

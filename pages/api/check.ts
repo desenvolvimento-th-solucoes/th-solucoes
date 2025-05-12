@@ -14,13 +14,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         console.log("Response: " + response)
         return res.status(request.status).json(response)
     } catch (error) {
-        console.log(error)
-        return res.status(500).json({ error: "backend error" })
+        return res.status(502).json({error: "backend error"})
     }
 }
-
-export const config = {
-    api: {
-        bodyParser: true,
-    },
-};
