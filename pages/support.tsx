@@ -6,7 +6,7 @@ const Support = () => {
     return (
         <MainLayout typeOfButtonInteraction={1}>
             <div className="pt-[120px] pb-[60px] bg-default-blue">
-                <h1 className="text-2xl text-white font-semibold w-full text-center mb-16">Painel de Atendimento</h1>
+                <h1 className="text-2xl text-white font-semibold w-full text-center mb-16">Suporte</h1>
                 <section className="max-w-7xl mx-auto w-full grid grid-cols-1 xl:grid-cols-3 gap-4 px-4 xl:px-0">
                     <article className="flex flex-col bg-white rounded-md border p-4 w-full h-max">
                         <FileVideo className="w-10 h-10 text-default-blue" />

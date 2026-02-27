@@ -67,7 +67,8 @@ export const MobileMenu = ({ show, onClick, handleShowMore, showMore }: Props) =
                     )}
                 </nav>
                 <li className="group border-b-2 border-b-gray-800 text-md font-medium transition-all w-full"><Link className="group-hover:text-white flex justify-start px-8 py-4 items-center hover:bg-default-blue w-full active:bg-default-blue cursor-pointer" href="https://lojath.com.br/">Loja</Link></li>
-                <li className="group border-b-2 border-b-gray-800 text-md font-medium transition-all w-full"><Link className="group-hover:text-white flex justify-start px-8 py-4 items-center hover:bg-default-blue w-full active:bg-default-blue cursor-pointer" href="/support">Painel de Atendimento</Link></li>
+                <li className="group border-b-2 border-b-gray-800 text-md font-medium transition-all w-full"><Link className="group-hover:text-white flex justify-start px-8 py-4 items-center hover:bg-default-blue w-full active:bg-default-blue cursor-pointer" href="https://painel.thsolucoes.com">Painel TH Soluções</Link></li>
+                <li className="group border-b-2 border-b-gray-800 text-md font-medium transition-all w-full"><Link className="group-hover:text-white flex justify-start px-8 py-4 items-center hover:bg-default-blue w-full active:bg-default-blue cursor-pointer" href="/support">Suporte</Link></li>
                 <li className="group border-b-2 border-b-gray-800 text-md font-medium transition-all w-full"><Link href="/restrict/login" className="group-hover:text-white flex justify-start px-8 py-4 items-center hover:bg-default-blue w-full active:bg-default-blue cursor-pointer">Área Restrita</Link></li>
                 {authenticationContext?.localStorageData.loggedUser && authenticationContext.localStorageData.isLogged && (
                     <>

@@ -247,7 +247,7 @@ const Contact = () => {
                                         <FaLocationDot className="text-md w-5 h-5" />
                                     </div>
                                     <div>
-                                        <p className="text-center lg:text-left">Rua Dr. Jose Alves, 313-B - Centro Mogi Mirim - São Paulo, 13800-050, Brazil</p>
+                                        <p className="text-center lg:text-left">Rua Treze de Maio, 59 - Centro Mogi Mirim - São Paulo, 13800-051, Brasil</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center mt-4 mb-10 flex-col lg:flex-row">
@@ -272,13 +272,22 @@ const Contact = () => {
                             <h2 className="text-2xl font-bold mb-4 text-center lg:text-4xl">Nossa Localização</h2>
                             <p className="font-extralight text-md mb-6 text-center lg:text-xl">Nossos clientes são importantes para nós. Ficaríamos contentes em receber a sua visita durante nosso horário comercial.</p>
                             <div className="w-full flex justify-center">
-                                <Button.Root hoverTextColor="group-hover:text-white" defaultTextColor={"text-black"} label="Como chegar" onClick={() => redirect("https://www.google.com/maps?daddr=Rua+Dr.+Jose+Alves,+313-B+-+Centro++Mogi+Mirim+-+S%C3%A3o+Paulo,+13800-050,+Brazil")}>
+                                <Button.Root hoverTextColor="group-hover:text-white" defaultTextColor={"text-black"} label="Como chegar" onClick={() => redirect("https://www.google.com/maps/dir/?api=1&destination=Rua+Treze+de+Maio,+59+Centro+Mogi+Mirim+SP")}>
                                     <Button.Icon backgroundColor="bg-default-blue" color="text-white" icon={<PiPaperPlaneRight className="absolute left-0 ml-3" />} />
                                 </Button.Root>
                             </div>
                         </div>
-                        <div className="w-full mt-8">
-                            <img src="/assets/images/map.png" className="object-cover w-full h-full" alt="" />
+                        <div className="w-full mt-8 overflow-hidden rounded-lg shadow-md">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.353322044321!2d-46.95325252378875!3d-22.434526622415177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8f1cb4f20387b%3A0x6b44585a060640d2!2sR.%20Treze%20de%20Maio%2C%2059%20-%20Centro%2C%20Mogi%20Mirim%20-%20SP%2C%2013800-051!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                                width="100%"
+                                height="450"
+                                style={{ border: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="Localização da Empresa"
+                            ></iframe>
                         </div>
                     </div>
                 </section>

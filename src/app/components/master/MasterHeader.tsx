@@ -61,7 +61,8 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                             <ComboOption labelColor="text-white" label={"TH Salões"} icon={<BsScissors className="text-xl" />} href={"/hairdressers"} />
                         </ComboBox>
                     </li>
-                    <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" href="/support">Painel de Atendimento</Link></li>
+                    <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" href="https://painel.thsolucoes.com">Painel TH Soluções</Link></li>
+                    <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" href="/support">Suporte</Link></li>
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link href="/restrict/login" className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full">Área Restrita</Link></li>
                 </ul>
                 <Modal
