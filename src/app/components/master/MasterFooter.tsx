@@ -22,7 +22,7 @@ export const MasterFooter = () => {
                             <FaLocationDot className="text-xl"/>
                         </div>
                         <div>
-                            <p className="text-center md:text-left">Rua Dr. Jose Alves, 313-B - Centro Mogi Mirim - São Paulo, 13800-050, Brazil</p>
+                            <p className="text-center md:text-left">Rua Treze de Maio, 59 - Centro Mogi Mirim - São Paulo, 13800-051, Brasil</p>
                         </div>
                     </div>
                 </div>
