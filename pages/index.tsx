@@ -90,7 +90,7 @@ const Index = () => {
                         </form>
                     </div>
                 </section>
-                <script src='https://privacidade.api.milvus.com.br/api/configuracao/script/a7c54480/eb8f23f55348c0eeffb2dfbf26274f0c32523827b301120accf41ee2bfa7117766d8a9bdb689ffb9583f7b4634e04bc9f5e44cc46e95e8b25374c94d61f6fe77593ffb1b0ba3fd8ba03cb2bdd7a593439aa2f667cdd2e77c2f4f73d43c84e4b2b17254178c'></script>
+                <script async src='https://privacidade.api.milvus.com.br/api/configuracao/script/a7c54480/eb8f23f55348c0eeffb2dfbf26274f0c32523827b301120accf41ee2bfa7117766d8a9bdb689ffb9583f7b4634e04bc9f5e44cc46e95e8b25374c94d61f6fe77593ffb1b0ba3fd8ba03cb2bdd7a593439aa2f667cdd2e77c2f4f73d43c84e4b2b17254178c'></script>
             </main>
         </MainLayout>
     )
