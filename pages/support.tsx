@@ -29,7 +29,7 @@ const Support = () => {
                         <Link className="my-4 hover:shadow-xl hover:bg-default-blue/90 bg-default-blue rounded-md text-white text-center py-4 px-2 transition-all" href="https://api.whatsapp.com/send/?phone=5519910005366&text&type=phone_number&app_absent=0">Iniciar Chat</Link>
                         <span className="text-default-blue font-semibold text-center">Atendimento Rápido</span>
                     </article>
-                    <Link className="xl:col-start-1 xl:col-end-4 my-4 hover:shadow-xl hover:bg-white/90 bg-white rounded-md text-center py-4 px-4 transition-all text-black flex items-center justify-center gap-4" href="https://thsolucoes.suport.systems/"><ClockArrowUp /> Consultar histórico de chamados.</Link>
+                    <Link className="xl:col-start-1 xl:col-end-4 my-4 hover:shadow-xl hover:bg-white/90 bg-white rounded-md text-center py-4 px-4 transition-all text-black flex items-center justify-center gap-4" href="https://thsolucoes.suport.cloud"><ClockArrowUp /> Consultar histórico de chamados.</Link>
                 </section>
             </div>
         </MainLayout>
