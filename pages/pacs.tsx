@@ -19,7 +19,7 @@ import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { MdHealthAndSafety } from "react-icons/md";
 import Link from "next/link";
 
-const Clinicals = () => {
+const Pacs = () => {
     const redirect = (target: string) => {
         window.open(target, "_blank")
     }
@@ -325,4 +325,4 @@ const Clinicals = () => {
     )
 }
 
-export default Clinicals;
+export default Pacs;
