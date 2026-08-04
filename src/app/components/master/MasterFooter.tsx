@@ -14,6 +14,7 @@ export const MasterFooter = () => {
                         </div>
                         <div>
                             <p className="text-center md:text-left">(19) 3090-1424</p>
+                            <p className="text-center md:text-left">(19) 3019-2156</p>
                             <p className="text-center md:text-left">(19) 91000-5366</p>
                         </div>
                     </div>

@@ -256,6 +256,7 @@ const Contact = () => {
                                     </div>
                                     <div className="flex flex-col justify-center">
                                         <p className="text-center lg:text-left">(19) 3019-2156</p>
+                                        <p className="text-center md:text-left">(19) 3090-1424</p>
                                         <p className="text-center lg:text-left">(19) 91000-5366</p>
                                     </div>
                                 </div>

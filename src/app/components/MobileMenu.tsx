@@ -63,6 +63,7 @@ export const MobileMenu = ({ show, onClick, handleShowMore, showMore }: Props) =
                             <li className="group border-b-2 border-b-gray-800 text-md font-medium transition-all w-full"><Link className="group-hover:text-white flex justify-start px-8 py-4 items-center hover:bg-default-blue w-full active:bg-default-blue cursor-pointer" href="/clinicals">TH Clínicas</Link></li>
                             <li className="group border-b-2 border-b-gray-800 text-md font-medium transition-all w-full"><Link className="group-hover:text-white flex justify-start px-8 py-4 items-center hover:bg-default-blue w-full active:bg-default-blue cursor-pointer" href="/shop">TH Shop</Link></li>
                             <li className="group border-b-2 border-b-gray-800 text-md font-medium transition-all w-full"><Link className="group-hover:text-white flex justify-start px-8 py-4 items-center hover:bg-default-blue w-full active:bg-default-blue cursor-pointer" href="/hairdressers">TH Salões</Link></li>
+                            <li className="group border-b-2 border-b-gray-800 text-md font-medium transition-all w-full"><Link className="group-hover:text-white flex justify-start px-8 py-4 items-center hover:bg-default-blue w-full active:bg-default-blue cursor-pointer" href="/pacs">TH Pacs</Link></li>
                         </ul>
                     )}
                 </nav>
