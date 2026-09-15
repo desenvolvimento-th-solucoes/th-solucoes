@@ -273,7 +273,7 @@ const Contact = () => {
                             <h2 className="text-2xl font-bold mb-4 text-center lg:text-4xl">Nossa Localização</h2>
                             <p className="font-extralight text-md mb-6 text-center lg:text-xl">Nossos clientes são importantes para nós. Ficaríamos contentes em receber a sua visita durante nosso horário comercial.</p>
                             <div className="w-full flex justify-center">
-                                <Button.Root hoverTextColor="group-hover:text-white" defaultTextColor={"text-black"} label="Como chegar" onClick={() => redirect("https://www.google.com/maps/place/TH+Solu%C3%A7%C3%B5es+-+Transpar%C3%AAncia+Honestidade+-+Tecnologia+Habilidade/@-22.4336569,-46.962596,17z/data=!3m1!4b1!4m6!3m5!1s0x94c8f83e3e8d6385:0x4a13fb28191a758!8m2!3d-22.4336619!4d-46.9600211!16s%2Fg%2F11h03zl0hx?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D)}>
+                                <Button.Root hoverTextColor="group-hover:text-white" defaultTextColor={"text-black"} label="Como chegar" onClick={() => redirect("https://www.google.com/maps/dir/?api=1&destination=TH+Soluções+-+Transparência+Honestidade+-+Tecnologia+Habilidade")}>
                                     <Button.Icon backgroundColor="bg-default-blue" color="text-white" icon={<PiPaperPlaneRight className="absolute left-0 ml-3" />} />
                                 </Button.Root>
                             </div>
