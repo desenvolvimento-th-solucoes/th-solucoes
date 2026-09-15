@@ -273,22 +273,21 @@ const Contact = () => {
                             <h2 className="text-2xl font-bold mb-4 text-center lg:text-4xl">Nossa Localização</h2>
                             <p className="font-extralight text-md mb-6 text-center lg:text-xl">Nossos clientes são importantes para nós. Ficaríamos contentes em receber a sua visita durante nosso horário comercial.</p>
                             <div className="w-full flex justify-center">
-                                <Button.Root hoverTextColor="group-hover:text-white" defaultTextColor={"text-black"} label="Como chegar" onClick={() => redirect("https://www.google.com/maps/dir/?api=1&destination=Rua+Treze+de+Maio,+59+Centro+Mogi+Mirim+SP")}>
+                                <Button.Root hoverTextColor="group-hover:text-white" defaultTextColor={"text-black"} label="Como chegar" onClick={() => redirect("https://www.google.com/maps/dir/?api=1&destination=TH+Soluções+-+Transparência+Honestidade+-+Tecnologia+Habilidade")}>
                                     <Button.Icon backgroundColor="bg-default-blue" color="text-white" icon={<PiPaperPlaneRight className="absolute left-0 ml-3" />} />
                                 </Button.Root>
                             </div>
                         </div>
                         <div className="w-full mt-8 overflow-hidden rounded-lg shadow-md">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.353322044321!2d-46.95325252378875!3d-22.434526622415177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8f1cb4f20387b%3A0x6b44585a060640d2!2sR.%20Treze%20de%20Maio%2C%2059%20-%20Centro%2C%20Mogi%20Mirim%20-%20SP%2C%2013800-051!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
-                                width="100%"
-                                height="450"
-                                style={{ border: 0 }}
-                                allowFullScreen
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade"
-                                title="Localização da Empresa"
-                            ></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1843.9394246293489!2d-46.9603411!3d-22.4335853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8f83e3e8d6385%3A0x4a13fb28191a758!2sTH%20Solu%C3%A7%C3%B5es%20-%20Transpar%C3%AAncia%20Honestidade%20-%20Tecnologia%20Habilidade!5e0!3m2!1spt-BR!2sbr!4v1789404955183!5m2!1spt-BR!2sbr" 
+                                width="100%" 
+                                height="450" 
+                                style={{ border: 0 }} 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Localização da Empresa">
+                            </iframe>
                         </div>
                     </div>
                 </section>
