@@ -42,6 +42,7 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
     return (
         <header className={`${!enable && navigate.pathname !== "/clinicals" && navigate.pathname !== "/learning" && "bg-transparent h-20"} ${!enable && (navigate.pathname === "/clinicals" || navigate.pathname === "/learning") && "h-20 shadow-gray-800 shadow-lg bg-default-black"} ${enable && "h-24 shadow-gray-800 shadow-lg bg-default-black"} duration-slow z-40 transition-all w-screen text-white flex justify-center fixed`}>
             <nav className="container mx-auto flex items-center justify-between h-full w-full relative px-4">
+                <Link href="/" className="h-full pl-4 flex items-center z-10"><Image width={40} height={40} src="/assets/images/outubro_rosa.png" alt="" /></Link>
                 <Link href="/" className="h-full pl-4 flex items-center z-10"><Image width={200} height={60} src="/assets/images/th-solucoes-logo1.png" alt="" /></Link>
                 <ul className="hidden xl:flex items-center justify-center h-full">
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link href="/" className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full">Início</Link></li>
