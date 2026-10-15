@@ -12,7 +12,9 @@ import { Modal } from "../Modal";
 import { AiOutlineInfo } from "react-icons/ai";
 import { BsGlobe, BsScissors } from "react-icons/bs";
 import { FaCarrot } from "react-icons/fa6";
-import { FaRegImages } from "react-icons/fa6";import Link from "next/link";
+import { FaRegImages } from "react-icons/fa6";
+import { IoShieldCheckmarkSharp } from "react-icons/io5";
+import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { QrCode, Radar } from "lucide-react";
@@ -62,6 +64,7 @@ export const MasterHeader = ({ enable }: { enable: boolean }) => {
                             <ComboOption labelColor="text-white" label={"TH Shop"} icon={<BiShoppingBag className="text-xl" />} href={"/shop"} />
                             <ComboOption labelColor="text-white" label={"TH Salões"} icon={<BsScissors className="text-xl" />} href={"/hairdressers"} />
                             <ComboOption labelColor="text-white" label={"TH Pacs"} icon={<FaRegImages className="text-xl" />} href={"/pacs"} />
+                            <ComboOption labelColor="text-white" label={"TH WebShield"} icon={<IoShieldCheckmarkSharp className="text-xl" />} href={"/webshield"} />
                         </ComboBox>
                     </li>
                     <li className="group text-md font-semibold transition-all hover:bg-default-blue h-full"><Link className="group-hover:text-white flex items-center cursor-pointer px-4 w-full h-full" href="https://painel.thsolucoes.com">Painel TH Soluções</Link></li>
