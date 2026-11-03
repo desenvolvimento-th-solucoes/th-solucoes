@@ -1,9 +1,8 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-
 
 type Campanha = {
   nome: string;
@@ -16,11 +15,12 @@ const campanhas: Record<number, Campanha> = {
   1: {
     nome: "Ano Novo",
     imagem: "/assets/images/ano-novo.png",
-     descricao:
-    "O Ano Novo celebra o início de um novo ciclo, trazendo a oportunidade de renovar as esperanças, estabelecer objetivos e iniciar novos projetos.",
-  significado:
-    "O dourado simboliza prosperidade, sucesso e abundância. A mensagem 'Feliz Ano Novo' representa os votos de felicidade, paz, saúde e realizações para o ano que começa.",
-},
+    descricao:
+      "O Ano Novo celebra o início de um novo ciclo, trazendo a oportunidade de renovar as esperanças, estabelecer objetivos e iniciar novos projetos.",
+    significado:
+      "O dourado simboliza prosperidade, sucesso e abundância. A mensagem 'Feliz Ano Novo' representa os votos de felicidade, paz, saúde e realizações para o ano que começa.",
+  },
+
   5: {
     nome: "Dia das Mães",
     imagem: "/assets/images/dia-das-maes.png",
@@ -69,24 +69,51 @@ const campanhas: Record<number, Campanha> = {
 
 export default function CampanhaDoMes() {
   const [aberto, setAberto] = useState(false);
+  const [campanha, setCampanha] = useState<Campanha | undefined>(
+    undefined
+  );
 
-  const hoje = new Date();
-  const dia = hoje.getDate();
-  const mes = hoje.getMonth() + 1;
+  useEffect(() => {
+    function atualizarCampanha() {
+      const hoje = new Date();
+      const dia = hoje.getDate();
+      const mes = hoje.getMonth() + 1;
 
-  let campanha;
+      let atual: Campanha | undefined;
 
-  if (mes === 12 && dia >= 1 && dia <= 25) {
-    campanha = campanhas[12]; // Natal
-  } else if (
-    (mes === 12 && dia >= 26) ||
-    (mes === 1 && dia <= 15)
-  ) {
-    campanha = campanhas[1]; // Ano Novo
-  } else {
-    campanha = campanhas[mes];
-  }
-  
+      // Natal: 1 a 25 de dezembro
+      if (mes === 12 && dia >= 1 && dia <= 25) {
+        atual = campanhas[12];
+      }
+
+      // Ano Novo: 26 de dezembro a 15 de janeiro
+      else if (
+        (mes === 12 && dia >= 26) ||
+        (mes === 1 && dia <= 15)
+      ) {
+        atual = campanhas[1];
+      }
+
+      // Demais campanhas: mês inteiro
+      else {
+        atual = campanhas[mes];
+      }
+
+      setCampanha(atual);
+    }
+
+    // Identifica a campanha ao carregar a página
+    atualizarCampanha();
+
+    // Atualiza quando o visitante retorna à página
+    window.addEventListener("focus", atualizarCampanha);
+
+    return () => {
+      window.removeEventListener("focus", atualizarCampanha);
+    };
+  }, []);
+
+  // Aguarda identificar a campanha no navegador
   if (!campanha) return null;
 
   return (
@@ -124,14 +151,14 @@ export default function CampanhaDoMes() {
               aria-label="Fechar janela"
               className="float-right text-2xl"
             >
-              
+              ×
             </button>
 
             <h2
               id="titulo-campanha"
               className="mb-4 text-2xl font-bold"
             >
-            {campanha.nome}
+              {campanha.nome}
             </h2>
 
             <Image
@@ -141,17 +168,22 @@ export default function CampanhaDoMes() {
               height={250}
               className="mb-4 h-auto max-h-48 w-full rounded-lg object-contain"
             />
-            
 
             <h3 className="mb-1 font-semibold">
               Sobre
             </h3>
-            <p className="mb-4">{campanha.descricao}</p>
+
+            <p className="mb-4">
+              {campanha.descricao}
+            </p>
 
             <h3 className="mb-1 font-semibold">
               Significado do símbolo
             </h3>
-            <p>{campanha.significado}</p>
+
+            <p>
+              {campanha.significado}
+            </p>
 
             <button
               type="button"
